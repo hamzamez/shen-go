@@ -53,5 +53,5 @@ we use it as
 ```shen
 (make-register a)
 (set-contents! a 25)
-(get-contests a) \\ output 25
+(get-contents a) \\ output 25
 ```

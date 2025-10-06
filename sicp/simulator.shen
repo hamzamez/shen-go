@@ -14,7 +14,7 @@
 (define gcd-machine ->
     (make-machine
     gcd-machine
-    [a b c]
+    [a b t]
     [[rem remainder][= =]]
     (test-b (test (op =) (reg b) (const 0))
              (branch (label gcd-done))
@@ -46,13 +46,13 @@
                 (put registers flag *unassigned* (value Self))
                 (put stack content [] (value Self))
                 (put the-instruction-sequence content [] (value Self))
-                (put the-ops content [[initialize-stack initialize]] (value Self))
+                (put the-ops 
+                     content 
+                     [[initialize-stack (/. Ignored 
+                                            (put stack content [] (value Self)))]] 
+                     (value Self))
                 (put register-table content [pc flag] (value Self))
                 Self))
-
-
-(define install-instruction-sequence
-    Machine Seq -> (put the-instruction-sequence content Seq (value Machine)))
 
 
 (define allocate-registers
@@ -68,6 +68,13 @@
                               Register))))
 
 
+(define install-instruction-sequence
+    Machine Seq -> (put the-instruction-sequence content Seq (value Machine)))
+
+
+
+
+
 (define get-register
     Machine Register -> (let Y (element? Register (get-register-table Machine))
                              (if Y
@@ -78,7 +85,7 @@
     Machine -> (get register-table content (value Machine)))
 
 (define install-operations
-    Machine Ops -> (let PrevOps (get the-ops content (value Machine))
+    Machine Ops -> (let PrevOps (operations Machine))
                         (put the-ops content (append PrevOps Ops) (value Machine))))
                         
 
@@ -149,23 +156,38 @@
     [[Label-name | Val] | _] Label-name -> Val)
 
 (define make-execution-procedure
-    assign Labels Machine Pc Flag Stack Ops -> (error "Implement make-execution-procedure"))
+    [assign  | Inst] Labels Machine Ops -> (make-assign [assign | Inst] Machine Labels Ops)
+    [test    | Inst] Labels Machine Ops -> (make-test    [test    | Inst] Machine Labels Ops)
+    [branch  | Inst] Labels Machine Ops -> (make-branch  [branch  | Inst] Machine Labels Ops)
+    [goto    | Inst] Labels Machine Ops -> (make-goto    [goto    | Inst] Machine Labels Ops)
+    [save    | Inst] Labels Machine Ops -> (make-save    [save    | Inst] Machine Labels Ops)
+    [restore | Inst] Labels Machine Ops -> (make-restore [restore | Inst] Machine Labels Ops)
+    [perform | Inst] Labels Machine Ops -> (make-perform [perform | Inst] Machine Labels Ops)
+    Inst _ _ _ -> (error "Unknown instruction type: ASSEMBLE ~A" Inst))
 
 (define make-assign
-    Inst Machine Labels Operations Pc -> 
-    (let Target (get-register Machine (assign-reg-name Inst))
-         Value-exp (assign-value-exp Inst)
-         Value-proc (if (operation-exp? Value-exp)
-                        (make-operation-exp Value-exp Machine Labels Operations)
-                        (make-primitive-exp (hd Value-exp) Machine Labels))
-         (/. Ignored (do 
-                        (set-contents! Target (Value-proc Ignored))
-                        (advance-pc Pc)))))
+    [assign Target | Exp] Machine Labels Ops ->
+        (/. Ignored (let Value-proc (make-assign-proc Exp Machine Labels Ops)
+                     (do (set-register-contents! Machine Target ))
+                          (advance-pc Machine))))
+
+
+(define make-assign-proc
+    [[reg Reg]]       Machine Labels Ops  -> (/. Ignored (get-register-contents Machine Reg))
+    [[const Value]]   Machine Labels Ops  -> (/. Ignored Value)
+    [[op | Op]| Args] Machine Labels Ops  -> (make-operation-exp [[op | Op]| Args] Machine Labels Ops)
+    [[label Name]]    Machine Labels Ops  -> (/. Ignored (lookup-label Labels Name))
+    Exp               _       _      _    -> (error "Uknown expression type: ASSEMBLE ~A" Exp))
+
+(define advance-pc
+    Machine -> (let PrevPc (get-register-contents Machine pc)
+                    (set-register-contents! Machine pc (tl PrevPc))))
+
 
 (define assign-reg-name
     [[_ | X ] | _] -> X)
 
-(define  assign-value-exp
+(define assign-value-exp
     [_ _ | Y] -> Y)
 
 (define make-operation-exp
@@ -176,7 +198,11 @@
             (/. Ignored (eval [Op (map (/. P (P Ignored)) Aprocs)]))))
 
 (define make-primitive-exp
-    E X Y -> (error "implement make-primitive-exp"))
+    [const Value] Machine Labels -> (/. Ignored Value)
+    [label Label] Machine Labels -> (/. Ignored (lookup-label Labels Label))
+    [reg   Reg  ] Machine Labels -> (/. Ignored (get-register-contents Machine Reg))
+    Exp           _       _      -> (error "Uknown expression type: ASSEMBLE ~A" Exp))
+    
 
 (define operation-exp?
     [[op | _]|_] -> true

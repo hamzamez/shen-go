@@ -78,3 +78,21 @@
         (do (put registers Register-name Value (value Machine))
             done))
 
+
+
+(define assemble
+    Controller-text Machine -> 
+        (let Receive (/. Insts Labels (update-insts! Insts Labels Machine))
+        (extract-labels Controller-text Receive)))
+
+
+(define extract-labels
+    []                 Receive -> (Receive [] [])
+    [Next-inst | Text] Receive -> 
+        (extract-labels Text (/. Insts Labels 
+                                (if (symbol? Next-inst)
+                                    \\ if symbol add to lables
+                                    (Receive Insts [(make-label-entry Next-inst Insts) | Labels])
+                                    \\ if not symbol add to Insts (instructions)
+                                    (Receive [(make-instruction Next-inst) | Insts])))))
+

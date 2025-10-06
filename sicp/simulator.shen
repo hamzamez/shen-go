@@ -1,3 +1,33 @@
+(define stringify
+    []      -> "()"
+    [skip]  -> ")"
+    X       -> (str X) where (not (cons? X))
+    [skip X | Y] -> (@s  (stringify X) " " (stringify [skip | Y]) ) 
+    [X | Y] -> (@s "("  (stringify  X) " " (stringify [skip | Y]) ))
+
+(defmacro quote
+    [test X Y Z] -> [test X Y (stringify Z)])
+
+(define test
+    X Y Z -> [X Y Z])
+
+(define gcd-machine ->
+    (make-machine
+    gcd-machine
+    [a b c]
+    [[rem remainder][= =]]
+    (test-b (test (op =) (reg b) (const 0))
+             (branch (label gcd-done))
+             (assign t (op rem) (reg a) (reg b))
+             (assign a (reg b))
+             (assign b (reg t))
+             (goto (label test-b))
+             gcd-done)))
+
+
+    
+
+
 (define make-machine
     Name Register-names Ops Controller-text ->
         (let Machine (make-new-machine Name)
@@ -96,3 +126,73 @@
                                     \\ if not symbol add to Insts (instructions)
                                     (Receive [(make-instruction Next-inst) | Insts])))))
 
+(define update-insts!
+    Insts Labels Machine -> (erro "impliment update-insts!"))
+
+(define make-instruction
+    Text -> [Text []])
+
+(define instruction-text
+    [Inst | _] -> Inst)
+
+(define instruction-execution-proc
+    [_ | Insts] -> Insts)
+
+(define set-instruction-execution-proc!
+    Inst Proc -> (error "implement set-instruction-execution-proc!"))
+
+(define make-label-entry
+    Label-name Insts -> [Label-name | Insts])
+
+(define lookup-label
+    [] Label-name -> (error "Undefined label: ASSEMBLE ~A" Label-name)
+    [[Label-name | Val] | _] Label-name -> Val)
+
+(define make-execution-procedure
+    assign Labels Machine Pc Flag Stack Ops -> (error "Implement make-execution-procedure"))
+
+(define make-assign
+    Inst Machine Labels Operations Pc -> 
+    (let Target (get-register Machine (assign-reg-name Inst))
+         Value-exp (assign-value-exp Inst)
+         Value-proc (if (operation-exp? Value-exp)
+                        (make-operation-exp Value-exp Machine Labels Operations)
+                        (make-primitive-exp (hd Value-exp) Machine Labels))
+         (/. Ignored (do 
+                        (set-contents! Target (Value-proc Ignored))
+                        (advance-pc Pc)))))
+
+(define assign-reg-name
+    [[_ | X ] | _] -> X)
+
+(define  assign-value-exp
+    [_ _ | Y] -> Y)
+
+(define make-operation-exp
+    Exp Machine Labels Operations
+    -> (let Op (lookup-prim (operation-exp-op Exp) Operations)
+            Aprocs (map (/. E (make-primitive-exp E Machine Labels)) 
+                        (operation-exp-operands Exp))
+            (/. Ignored (eval [Op (map (/. P (P Ignored)) Aprocs)]))))
+
+(define make-primitive-exp
+    E X Y -> (error "implement make-primitive-exp"))
+
+(define operation-exp?
+    [[op | _]|_] -> true
+    _ -> false)
+
+(define operation-exp-op
+    [[_ | Op] | _] -> Op)
+
+(define operation-exp-operands
+    [_ | Operand] -> Operand)
+
+(define tagged-list?
+    [Tag | _] Tag -> true
+    _         _   -> false)
+
+(define lookup-prim
+    Symbol [] -> (error "Unkown operation: ASSEMPLE ~A" Symbol)
+    Symbol [[Symbol | Op] | _] -> Op
+    Symbol [_ | Y] -> (lookup-prim Symbol Y))

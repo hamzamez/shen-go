@@ -92,6 +92,18 @@
 (define stack
     Machine -> (get stack content (value Machine)))  
 
+(define push-stack
+    Machine Value -> (let Prev (stack Machine))
+                          (put stack content [Value | Prev] (value Machine))))
+
+(define pop-stack
+    Machine -> (let Stack (stack Machine)
+                    Top (hd Stack)
+                    (if (empty? Stack)
+                        (error "Empty stack: POP")
+                        (do (put stack content (tl Stack) (value Machine))
+                            Top))))
+
 (define operations
     Machine -> (get the-ops content (value Machine)))
 
@@ -182,6 +194,41 @@
 (define advance-pc
     Machine -> (let PrevPc (get-register-contents Machine pc)
                     (set-register-contents! Machine pc (tl PrevPc))))
+
+
+
+(define make-test
+    [test [op | Op]| Exp] Machine Labels Ops -> 
+        (let Condition-proc (make-operation-exp [[op | Op] | Exp] Machine Labels Ops)
+             (/. Ignored (do (set-register-contents! Machine flag (Condition-proc))
+                 (advance-pc Machine))))
+    Inst _ _ _ -> (error "Bad Test instruction: ASSEMBLE ~A" Inst))
+
+(define make-branch
+    [branch [label Dest]] Machine Labels Ops -> 
+        (/. Ignored (do (get-register-contents Machine flag)
+                        (set-regiser-contents! Machine pc (lookup-label Labels Dest))
+                        (advance-pc Machine)))
+    Inst _ _ _ -> (error "Bad BRANCH instruction: ASSEMBLE" Inst))
+
+(define make-goto 
+    [goto [label Dest]] Machine Labels Ops -> 
+            (/. Ignored (lookup-label Labels Dest))
+    [goto [reg Register]] Machine Labels Ops ->
+            (/. Ignored (let Reg (get-register-contents Machine Register)
+                             (set-register-contents! Machine pc Reg)))
+    Inst _ _ _ -> (error "Bad GOTO instruction: ASSEMBLE ~A" Inst))
+
+(define make-save
+    [save [reg Register]] Machine Labels Ops ->
+        (/. Ignored (do (push-stack Machine Register)
+                        (advance-pc Machine))))
+
+(define make-restore
+    [restore [reg Register]] Machine Labels Ops ->
+        (/. Ignored (do (set-register-contents! Machine Register (pop-stack Machine))
+                        (advance-pc Machine))))
+
 
 
 (define assign-reg-name

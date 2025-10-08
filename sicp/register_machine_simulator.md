@@ -87,3 +87,28 @@ This will work just like the scheme version
      C  (R get)  \\ 25
      )
 ```
+
+### Making a machine
+To make a machine that calculates gcd, we call make-machine with 4 arguments
+- name of the machine gcd-machine: global variable pointing to the machine model created
+- list of registers needed by our machine  [a b t]
+- list of primitive operations [[rem remainder][= =]] , rem : to be used in machine code , remainder : function on scheme (I think we will change that to mod in shen)
+- list of instructions that will run on our simulator.
+
+```shen
+(define gcd-machine ->
+    (make-machine
+        gcd-machine
+        [a b t]
+        [[rem remainder][= =]]
+        [test-b 
+            [test [op =] [reg b] [const 0]] 
+            [branch [label gcd-done]] 
+            [assign t [op rem] [reg a] [reg b]] 
+            [assign a [reg b]] 
+            [assign b [reg t]] 
+            [goto [label test-b]] 
+         gcd-done]))
+```
+
+

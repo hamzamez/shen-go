@@ -6,10 +6,15 @@
                     
 (define read-file
   File -> (let Bytelist (read-file-as-bytelist File)
-               S-exprs (trap-error (compile (/. X (<s-exprs> X)) Bytelist)
-                                   (/. E (print-residue (value *residue*))))
+               S-exprs (compileBytes (/. X (<s-exprs> X)) Bytelist)
                Process (process-sexprs S-exprs)
                Process)) 
+
+(define compileBytes
+  F L -> (let Compile (F L)
+              (cases (parse-failure? Compile) (error "parse failure~%")
+                     (cons? (in-> Compile))   (print-residue (in-> Compile))
+                     true (<-out Compile))))
                
 (define print-residue
   Residue -> (let Err (output "syntax error here:~%")

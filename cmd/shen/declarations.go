@@ -3,234 +3,234 @@ package main
 import . "github.com/tiancaiamao/shen-go/kl"
 
 var DeclarationsMain = MakeNative(func(__e *ControlFlow) {
-tmp7573 := PrimSet(symshen_4_dhistory_d, Nil)
+tmp7580 := PrimSet(symshen_4_dhistory_d, Nil)
 
-_ = tmp7573
+_ = tmp7580
 
-tmp7574 := PrimSet(symshen_4_dtc_d, False)
+tmp7581 := PrimSet(symshen_4_dtc_d, False)
 
-_ = tmp7574
+_ = tmp7581
 
-tmp7575 := Call(__e, PrimFunc(symvector), MakeNumber(20000))
+tmp7582 := Call(__e, PrimFunc(symvector), MakeNumber(20000))
 
 
-tmp7576 := PrimSet(sym_dproperty_1vector_d, tmp7575)
+tmp7583 := PrimSet(sym_dproperty_1vector_d, tmp7582)
 
-_ = tmp7576
+_ = tmp7583
 
-tmp7577 := MakeNative(func(__e *ControlFlow) {
+tmp7584 := MakeNative(func(__e *ControlFlow) {
 X := __e.Get(1)
 _ = X
 __e.TailApply(PrimFunc(symshen_4macros), X)
 return
 }, 1)
 
-tmp7578 := PrimCons(symshen_4macros, tmp7577)
+tmp7585 := PrimCons(symshen_4macros, tmp7584)
 
-tmp7579 := PrimCons(tmp7578, Nil)
+tmp7586 := PrimCons(tmp7585, Nil)
 
-tmp7580 := PrimSet(sym_dmacros_d, tmp7579)
+tmp7587 := PrimSet(sym_dmacros_d, tmp7586)
 
-_ = tmp7580
+_ = tmp7587
 
-tmp7581 := PrimSet(symshen_4_dgensym_d, MakeNumber(0))
+tmp7588 := PrimSet(symshen_4_dgensym_d, MakeNumber(0))
 
-_ = tmp7581
+_ = tmp7588
 
-tmp7582 := PrimSet(symshen_4_dtracking_d, Nil)
+tmp7589 := PrimSet(symshen_4_dtracking_d, Nil)
 
-_ = tmp7582
+_ = tmp7589
 
-tmp7583 := PrimSet(symshen_4_dprofiled_d, Nil)
+tmp7590 := PrimSet(symshen_4_dprofiled_d, Nil)
 
-_ = tmp7583
+_ = tmp7590
 
-tmp7584 := PrimSet(sym_dhome_1directory_d, MakeString(""))
+tmp7591 := PrimSet(sym_dhome_1directory_d, MakeString(""))
 
-_ = tmp7584
+_ = tmp7591
 
-tmp7585 := PrimCons(symtype, Nil)
+tmp7592 := PrimCons(symtype, Nil)
 
-tmp7586 := PrimCons(syminput_7, tmp7585)
+tmp7593 := PrimCons(syminput_7, tmp7592)
 
-tmp7587 := PrimCons(symopen, tmp7586)
+tmp7594 := PrimCons(symopen, tmp7593)
 
-tmp7588 := PrimCons(symset, tmp7587)
+tmp7595 := PrimCons(symset, tmp7594)
 
-tmp7589 := PrimCons(symwhere, tmp7588)
+tmp7596 := PrimCons(symwhere, tmp7595)
 
-tmp7590 := PrimCons(symlet, tmp7589)
+tmp7597 := PrimCons(symlet, tmp7596)
 
-tmp7591 := PrimCons(symlambda, tmp7590)
+tmp7598 := PrimCons(symlambda, tmp7597)
 
-tmp7592 := PrimCons(symcons, tmp7591)
+tmp7599 := PrimCons(symcons, tmp7598)
 
-tmp7593 := PrimCons(sym_8v, tmp7592)
+tmp7600 := PrimCons(sym_8v, tmp7599)
 
-tmp7594 := PrimCons(sym_8s, tmp7593)
+tmp7601 := PrimCons(sym_8s, tmp7600)
 
-tmp7595 := PrimCons(sym_8p, tmp7594)
+tmp7602 := PrimCons(sym_8p, tmp7601)
 
-tmp7596 := PrimSet(symshen_4_dspecial_d, tmp7595)
-
-_ = tmp7596
-
-tmp7597 := PrimSet(symshen_4_dextraspecial_d, Nil)
-
-_ = tmp7597
-
-tmp7598 := PrimSet(symshen_4_dspy_d, False)
-
-_ = tmp7598
-
-tmp7599 := PrimSet(symshen_4_ddatatypes_d, Nil)
-
-_ = tmp7599
-
-tmp7600 := PrimSet(symshen_4_dalldatatypes_d, Nil)
-
-_ = tmp7600
-
-tmp7601 := PrimSet(symshen_4_dshen_1type_1theory_1enabled_2_d, True)
-
-_ = tmp7601
-
-tmp7602 := PrimSet(symshen_4_dpackage_d, symnull)
-
-_ = tmp7602
-
-tmp7603 := PrimSet(symshen_4_dsynonyms_d, Nil)
+tmp7603 := PrimSet(symshen_4_dspecial_d, tmp7602)
 
 _ = tmp7603
 
-tmp7604 := PrimSet(symshen_4_dsystem_d, Nil)
+tmp7604 := PrimSet(symshen_4_dextraspecial_d, Nil)
 
 _ = tmp7604
 
-tmp7605 := PrimSet(symshen_4_dsigf_d, Nil)
+tmp7605 := PrimSet(symshen_4_dspy_d, False)
 
 _ = tmp7605
 
-tmp7606 := PrimSet(symshen_4_doccurs_d, True)
+tmp7606 := PrimSet(symshen_4_ddatatypes_d, Nil)
 
 _ = tmp7606
 
-tmp7607 := PrimSet(symshen_4_dfactorise_2_d, False)
+tmp7607 := PrimSet(symshen_4_dalldatatypes_d, Nil)
 
 _ = tmp7607
 
-tmp7608 := PrimSet(symshen_4_dmaxinferences_d, MakeNumber(1000000))
+tmp7608 := PrimSet(symshen_4_dshen_1type_1theory_1enabled_2_d, True)
 
 _ = tmp7608
 
-tmp7609 := PrimSet(sym_dmaximum_1print_1sequence_1size_d, MakeNumber(20))
+tmp7609 := PrimSet(symshen_4_dpackage_d, symnull)
 
 _ = tmp7609
 
-tmp7610 := PrimSet(symshen_4_dcall_d, MakeNumber(0))
+tmp7610 := PrimSet(symshen_4_dsynonyms_d, Nil)
 
 _ = tmp7610
 
-tmp7611 := PrimSet(symshen_4_dinfs_d, MakeNumber(0))
+tmp7611 := PrimSet(symshen_4_dsystem_d, Nil)
 
 _ = tmp7611
 
-tmp7612 := PrimSet(sym_dhush_d, False)
+tmp7612 := PrimSet(symshen_4_dsigf_d, Nil)
 
 _ = tmp7612
 
-tmp7613 := PrimSet(symshen_4_doptimise_d, False)
+tmp7613 := PrimSet(symshen_4_doccurs_d, True)
 
 _ = tmp7613
 
-tmp7614 := PrimSet(sym_dversion_d, MakeString("39.2"))
+tmp7614 := PrimSet(symshen_4_dfactorise_2_d, False)
 
 _ = tmp7614
 
-tmp7615 := PrimSet(symshen_4_dnames_d, Nil)
+tmp7615 := PrimSet(symshen_4_dmaxinferences_d, MakeNumber(1000000))
 
 _ = tmp7615
 
-tmp7616 := PrimSet(symshen_4_dstep_d, False)
+tmp7616 := PrimSet(sym_dmaximum_1print_1sequence_1size_d, MakeNumber(20))
 
 _ = tmp7616
 
-tmp7617 := PrimSet(symshen_4_dit_d, MakeString(""))
+tmp7617 := PrimSet(symshen_4_dcall_d, MakeNumber(0))
 
 _ = tmp7617
 
-tmp7618 := PrimSet(symshen_4_dresidue_d, Nil)
+tmp7618 := PrimSet(symshen_4_dinfs_d, MakeNumber(0))
 
 _ = tmp7618
 
-tmp7619 := PrimSet(symshen_4_dprolog_1memory_d, MakeNumber(1000))
+tmp7619 := PrimSet(sym_dhush_d, False)
 
 _ = tmp7619
 
-tmp7620 := PrimSet(symshen_4_dloading_2_d, False)
+tmp7620 := PrimSet(symshen_4_doptimise_d, False)
 
 _ = tmp7620
 
-tmp7621 := PrimSet(symshen_4_duserdefs_d, Nil)
+tmp7621 := PrimSet(sym_dversion_d, MakeString("39.2"))
 
 _ = tmp7621
 
-tmp7622 := MakeNative(func(__e *ControlFlow) {
-tmp7623 := MakeNative(func(__e *ControlFlow) {
-Z5776 := __e.Get(1)
-_ = Z5776
-__e.TailApply(PrimFunc(symshen_4typename), Z5776)
-return
-}, 1)
+tmp7622 := PrimSet(symshen_4_dnames_d, Nil)
 
-tmp7624 := PrimValue(symshen_4_dalldatatypes_d)
+_ = tmp7622
 
-__e.TailApply(PrimFunc(symmap), tmp7623, tmp7624)
-return
+tmp7623 := PrimSet(symshen_4_dstep_d, False)
 
+_ = tmp7623
 
-}, 0)
+tmp7624 := PrimSet(symshen_4_dit_d, MakeString(""))
 
-tmp7625 := Call(__e, ns2_1set, symdatatypes, tmp7622)
+_ = tmp7624
 
+tmp7625 := PrimSet(symshen_4_dresidue_d, Nil)
 
 _ = tmp7625
 
-tmp7626 := MakeNative(func(__e *ControlFlow) {
-tmp7627 := MakeNative(func(__e *ControlFlow) {
-Z5777 := __e.Get(1)
-_ = Z5777
-__e.TailApply(PrimFunc(symshen_4typename), Z5777)
+tmp7626 := PrimSet(symshen_4_dprolog_1memory_d, MakeNumber(1000))
+
+_ = tmp7626
+
+tmp7627 := PrimSet(symshen_4_dloading_2_d, False)
+
+_ = tmp7627
+
+tmp7628 := PrimSet(symshen_4_duserdefs_d, Nil)
+
+_ = tmp7628
+
+tmp7629 := MakeNative(func(__e *ControlFlow) {
+tmp7630 := MakeNative(func(__e *ControlFlow) {
+Z5780 := __e.Get(1)
+_ = Z5780
+__e.TailApply(PrimFunc(symshen_4typename), Z5780)
 return
 }, 1)
 
-tmp7628 := PrimValue(symshen_4_ddatatypes_d)
+tmp7631 := PrimValue(symshen_4_dalldatatypes_d)
 
-__e.TailApply(PrimFunc(symmap), tmp7627, tmp7628)
+__e.TailApply(PrimFunc(symmap), tmp7630, tmp7631)
 return
 
 
 }, 0)
 
-tmp7629 := Call(__e, ns2_1set, symincluded, tmp7626)
+tmp7632 := Call(__e, ns2_1set, symdatatypes, tmp7629)
 
 
-_ = tmp7629
+_ = tmp7632
 
-tmp7630 := MakeNative(func(__e *ControlFlow) {
-V5780 := __e.Get(1)
-_ = V5780
-tmp7635 := PrimIsPair(V5780)
+tmp7633 := MakeNative(func(__e *ControlFlow) {
+tmp7634 := MakeNative(func(__e *ControlFlow) {
+Z5781 := __e.Get(1)
+_ = Z5781
+__e.TailApply(PrimFunc(symshen_4typename), Z5781)
+return
+}, 1)
 
-if True == tmp7635 {
-tmp7631 := PrimHead(V5780)
+tmp7635 := PrimValue(symshen_4_ddatatypes_d)
 
-tmp7632 := PrimStr(tmp7631)
-
-tmp7633 := Call(__e, PrimFunc(symshen_4typename_1h), tmp7632)
+__e.TailApply(PrimFunc(symmap), tmp7634, tmp7635)
+return
 
 
-__e.Return(PrimIntern(tmp7633))
+}, 0)
+
+tmp7636 := Call(__e, ns2_1set, symincluded, tmp7633)
+
+
+_ = tmp7636
+
+tmp7637 := MakeNative(func(__e *ControlFlow) {
+V5784 := __e.Get(1)
+_ = V5784
+tmp7642 := PrimIsPair(V5784)
+
+if True == tmp7642 {
+tmp7638 := PrimHead(V5784)
+
+tmp7639 := PrimStr(tmp7638)
+
+tmp7640 := Call(__e, PrimFunc(symshen_4typename_1h), tmp7639)
+
+
+__e.Return(PrimIntern(tmp7640))
 return
 
 
@@ -242,33 +242,33 @@ return
 
 }, 1)
 
-tmp7636 := Call(__e, ns2_1set, symshen_4typename, tmp7630)
+tmp7643 := Call(__e, ns2_1set, symshen_4typename, tmp7637)
 
 
-_ = tmp7636
+_ = tmp7643
 
-tmp7637 := MakeNative(func(__e *ControlFlow) {
-V5781 := __e.Get(1)
-_ = V5781
-tmp7644 := PrimEqual(MakeString("#type"), V5781)
+tmp7644 := MakeNative(func(__e *ControlFlow) {
+V5785 := __e.Get(1)
+_ = V5785
+tmp7651 := PrimEqual(MakeString("#type"), V5785)
 
-if True == tmp7644 {
+if True == tmp7651 {
 __e.Return(MakeString(""))
 return
 } else {
-tmp7642 := Call(__e, PrimFunc(symshen_4_7string_2), V5781)
+tmp7649 := Call(__e, PrimFunc(symshen_4_7string_2), V5785)
 
 
-if True == tmp7642 {
-tmp7638 := Call(__e, PrimFunc(symhdstr), V5781)
+if True == tmp7649 {
+tmp7645 := Call(__e, PrimFunc(symhdstr), V5785)
 
 
-tmp7639 := PrimTailString(V5781)
+tmp7646 := PrimTailString(V5785)
 
-tmp7640 := Call(__e, PrimFunc(symshen_4typename_1h), tmp7639)
+tmp7647 := Call(__e, PrimFunc(symshen_4typename_1h), tmp7646)
 
 
-__e.Return(PrimStringConcat(tmp7638, tmp7640))
+__e.Return(PrimStringConcat(tmp7645, tmp7647))
 return
 
 
@@ -283,24 +283,24 @@ return
 
 }, 1)
 
-tmp7645 := Call(__e, ns2_1set, symshen_4typename_1h, tmp7637)
+tmp7652 := Call(__e, ns2_1set, symshen_4typename_1h, tmp7644)
 
 
-_ = tmp7645
+_ = tmp7652
 
-tmp7646 := MakeNative(func(__e *ControlFlow) {
-V5782 := __e.Get(1)
-_ = V5782
-tmp7650 := PrimLessThan(V5782, MakeNumber(0))
+tmp7653 := MakeNative(func(__e *ControlFlow) {
+V5786 := __e.Get(1)
+_ = V5786
+tmp7657 := PrimLessThan(V5786, MakeNumber(0))
 
-if True == tmp7650 {
+if True == tmp7657 {
 __e.Return(PrimValue(symshen_4_dprolog_1memory_d))
 return
 } else {
-tmp7648 := PrimIsInteger(V5782)
+tmp7655 := PrimIsInteger(V5786)
 
-if True == tmp7648 {
-__e.Return(PrimSet(symshen_4_dprolog_1memory_d, V5782))
+if True == tmp7655 {
+__e.Return(PrimSet(symshen_4_dprolog_1memory_d, V5786))
 return
 } else {
 __e.Return(PrimSimpleError(MakeString("prolog memory expects an integer value\n")))
@@ -313,76 +313,76 @@ return
 
 }, 1)
 
-tmp7651 := Call(__e, ns2_1set, symprolog_1memory, tmp7646)
+tmp7658 := Call(__e, ns2_1set, symprolog_1memory, tmp7653)
 
 
-_ = tmp7651
+_ = tmp7658
 
-tmp7652 := MakeNative(func(__e *ControlFlow) {
-V5785 := __e.Get(1)
-_ = V5785
-tmp7668 := PrimEqual(Nil, V5785)
+tmp7659 := MakeNative(func(__e *ControlFlow) {
+V5789 := __e.Get(1)
+_ = V5789
+tmp7675 := PrimEqual(Nil, V5789)
 
-if True == tmp7668 {
+if True == tmp7675 {
 __e.Return(Nil)
 return
 } else {
-tmp7666 := PrimIsPair(V5785)
+tmp7673 := PrimIsPair(V5789)
 
-var ifres7662 Obj
+var ifres7669 Obj
 
-if True == tmp7666 {
-tmp7664 := PrimTail(V5785)
+if True == tmp7673 {
+tmp7671 := PrimTail(V5789)
 
-tmp7665 := PrimIsPair(tmp7664)
+tmp7672 := PrimIsPair(tmp7671)
 
-var ifres7663 Obj
+var ifres7670 Obj
 
-if True == tmp7665 {
-ifres7663 = True
+if True == tmp7672 {
+ifres7670 = True
 
 
 } else {
-ifres7663 = False
+ifres7670 = False
 
 
 }
 
-ifres7662 = ifres7663
+ifres7669 = ifres7670
 
 
 } else {
-ifres7662 = False
+ifres7669 = False
 
 
 }
 
-if True == ifres7662 {
-tmp7653 := MakeNative(func(__e *ControlFlow) {
-W5786 := __e.Get(1)
-_ = W5786
-tmp7654 := PrimTail(V5785)
+if True == ifres7669 {
+tmp7660 := MakeNative(func(__e *ControlFlow) {
+W5790 := __e.Get(1)
+_ = W5790
+tmp7661 := PrimTail(V5789)
 
-tmp7655 := PrimTail(tmp7654)
+tmp7662 := PrimTail(tmp7661)
 
-__e.TailApply(PrimFunc(symshen_4initialise_1arity_1table), tmp7655)
+__e.TailApply(PrimFunc(symshen_4initialise_1arity_1table), tmp7662)
 return
 
 
 }, 1)
 
-tmp7656 := PrimHead(V5785)
+tmp7663 := PrimHead(V5789)
 
-tmp7657 := PrimTail(V5785)
+tmp7664 := PrimTail(V5789)
 
-tmp7658 := PrimHead(tmp7657)
+tmp7665 := PrimHead(tmp7664)
 
-tmp7659 := PrimValue(sym_dproperty_1vector_d)
+tmp7666 := PrimValue(sym_dproperty_1vector_d)
 
-tmp7660 := Call(__e, PrimFunc(symput), tmp7656, symarity, tmp7658, tmp7659)
+tmp7667 := Call(__e, PrimFunc(symput), tmp7663, symarity, tmp7665, tmp7666)
 
 
-__e.TailApply(tmp7653, tmp7660)
+__e.TailApply(tmp7660, tmp7667)
 return
 
 
@@ -397,106 +397,106 @@ return
 
 }, 1)
 
-tmp7669 := Call(__e, ns2_1set, symshen_4initialise_1lambda_1tables, tmp7652)
+tmp7676 := Call(__e, ns2_1set, symshen_4initialise_1lambda_1tables, tmp7659)
 
 
-_ = tmp7669
+_ = tmp7676
 
-tmp7670 := MakeNative(func(__e *ControlFlow) {
-V5787 := __e.Get(1)
-_ = V5787
-tmp7671 := MakeNative(func(__e *ControlFlow) {
-tmp7672 := PrimValue(sym_dproperty_1vector_d)
+tmp7677 := MakeNative(func(__e *ControlFlow) {
+V5791 := __e.Get(1)
+_ = V5791
+tmp7678 := MakeNative(func(__e *ControlFlow) {
+tmp7679 := PrimValue(sym_dproperty_1vector_d)
 
-__e.TailApply(PrimFunc(symget), V5787, symarity, tmp7672)
+__e.TailApply(PrimFunc(symget), V5791, symarity, tmp7679)
 return
 
 
 }, 0)
 
-tmp7673 := MakeNative(func(__e *ControlFlow) {
-Z5788 := __e.Get(1)
-_ = Z5788
+tmp7680 := MakeNative(func(__e *ControlFlow) {
+Z5792 := __e.Get(1)
+_ = Z5792
 __e.Return(MakeNumber(-1))
 return
 }, 1)
 
-__e.TailApply(try_1catch, tmp7671, tmp7673)
+__e.TailApply(try_1catch, tmp7678, tmp7680)
 return
 
 
 }, 1)
 
-tmp7674 := Call(__e, ns2_1set, symarity, tmp7670)
+tmp7681 := Call(__e, ns2_1set, symarity, tmp7677)
 
 
-_ = tmp7674
+_ = tmp7681
 
-tmp7675 := MakeNative(func(__e *ControlFlow) {
-V5791 := __e.Get(1)
-_ = V5791
-tmp7691 := PrimEqual(Nil, V5791)
+tmp7682 := MakeNative(func(__e *ControlFlow) {
+V5795 := __e.Get(1)
+_ = V5795
+tmp7698 := PrimEqual(Nil, V5795)
 
-if True == tmp7691 {
+if True == tmp7698 {
 __e.Return(Nil)
 return
 } else {
-tmp7689 := PrimIsPair(V5791)
+tmp7696 := PrimIsPair(V5795)
 
-var ifres7685 Obj
+var ifres7692 Obj
 
-if True == tmp7689 {
-tmp7687 := PrimTail(V5791)
+if True == tmp7696 {
+tmp7694 := PrimTail(V5795)
 
-tmp7688 := PrimIsPair(tmp7687)
+tmp7695 := PrimIsPair(tmp7694)
 
-var ifres7686 Obj
+var ifres7693 Obj
 
-if True == tmp7688 {
-ifres7686 = True
+if True == tmp7695 {
+ifres7693 = True
 
 
 } else {
-ifres7686 = False
+ifres7693 = False
 
 
 }
 
-ifres7685 = ifres7686
+ifres7692 = ifres7693
 
 
 } else {
-ifres7685 = False
+ifres7692 = False
 
 
 }
 
-if True == ifres7685 {
-tmp7676 := MakeNative(func(__e *ControlFlow) {
-W5792 := __e.Get(1)
-_ = W5792
-tmp7677 := PrimTail(V5791)
+if True == ifres7692 {
+tmp7683 := MakeNative(func(__e *ControlFlow) {
+W5796 := __e.Get(1)
+_ = W5796
+tmp7684 := PrimTail(V5795)
 
-tmp7678 := PrimTail(tmp7677)
+tmp7685 := PrimTail(tmp7684)
 
-__e.TailApply(PrimFunc(symshen_4initialise_1arity_1table), tmp7678)
+__e.TailApply(PrimFunc(symshen_4initialise_1arity_1table), tmp7685)
 return
 
 
 }, 1)
 
-tmp7679 := PrimHead(V5791)
+tmp7686 := PrimHead(V5795)
 
-tmp7680 := PrimTail(V5791)
+tmp7687 := PrimTail(V5795)
 
-tmp7681 := PrimHead(tmp7680)
+tmp7688 := PrimHead(tmp7687)
 
-tmp7682 := PrimValue(sym_dproperty_1vector_d)
+tmp7689 := PrimValue(sym_dproperty_1vector_d)
 
-tmp7683 := Call(__e, PrimFunc(symput), tmp7679, symarity, tmp7681, tmp7682)
+tmp7690 := Call(__e, PrimFunc(symput), tmp7686, symarity, tmp7688, tmp7689)
 
 
-__e.TailApply(tmp7676, tmp7683)
+__e.TailApply(tmp7683, tmp7690)
 return
 
 
@@ -511,1484 +511,1484 @@ return
 
 }, 1)
 
-tmp7692 := Call(__e, ns2_1set, symshen_4initialise_1arity_1table, tmp7675)
+tmp7699 := Call(__e, ns2_1set, symshen_4initialise_1arity_1table, tmp7682)
 
 
-_ = tmp7692
+_ = tmp7699
 
-tmp7693 := PrimCons(MakeNumber(2), Nil)
+tmp7700 := PrimCons(MakeNumber(2), Nil)
 
-tmp7694 := PrimCons(sym_8s, tmp7693)
+tmp7701 := PrimCons(sym_8s, tmp7700)
 
-tmp7695 := PrimCons(MakeNumber(2), tmp7694)
+tmp7702 := PrimCons(MakeNumber(2), tmp7701)
 
-tmp7696 := PrimCons(sym_8v, tmp7695)
+tmp7703 := PrimCons(sym_8v, tmp7702)
 
-tmp7697 := PrimCons(MakeNumber(2), tmp7696)
+tmp7704 := PrimCons(MakeNumber(2), tmp7703)
 
-tmp7698 := PrimCons(sym_8p, tmp7697)
+tmp7705 := PrimCons(sym_8p, tmp7704)
 
-tmp7699 := PrimCons(MakeNumber(1), tmp7698)
+tmp7706 := PrimCons(MakeNumber(1), tmp7705)
 
-tmp7700 := PrimCons(sym_5_b_6, tmp7699)
+tmp7707 := PrimCons(sym_5_b_6, tmp7706)
 
-tmp7701 := PrimCons(MakeNumber(1), tmp7700)
+tmp7708 := PrimCons(MakeNumber(1), tmp7707)
 
-tmp7702 := PrimCons(sym_5end_6, tmp7701)
+tmp7709 := PrimCons(sym_5end_6, tmp7708)
 
-tmp7703 := PrimCons(MakeNumber(1), tmp7702)
+tmp7710 := PrimCons(MakeNumber(1), tmp7709)
 
-tmp7704 := PrimCons(sym_5e_6, tmp7703)
+tmp7711 := PrimCons(sym_5e_6, tmp7710)
 
-tmp7705 := PrimCons(MakeNumber(2), tmp7704)
+tmp7712 := PrimCons(MakeNumber(2), tmp7711)
 
-tmp7706 := PrimCons(sym_a_a, tmp7705)
+tmp7713 := PrimCons(sym_a_a, tmp7712)
 
-tmp7707 := PrimCons(MakeNumber(2), tmp7706)
+tmp7714 := PrimCons(MakeNumber(2), tmp7713)
 
-tmp7708 := PrimCons(sym_1, tmp7707)
+tmp7715 := PrimCons(sym_1, tmp7714)
 
-tmp7709 := PrimCons(MakeNumber(2), tmp7708)
+tmp7716 := PrimCons(MakeNumber(2), tmp7715)
 
-tmp7710 := PrimCons(sym_c, tmp7709)
+tmp7717 := PrimCons(sym_c, tmp7716)
 
-tmp7711 := PrimCons(MakeNumber(2), tmp7710)
+tmp7718 := PrimCons(MakeNumber(2), tmp7717)
 
-tmp7712 := PrimCons(sym_d, tmp7711)
+tmp7719 := PrimCons(sym_d, tmp7718)
 
-tmp7713 := PrimCons(MakeNumber(2), tmp7712)
+tmp7720 := PrimCons(MakeNumber(2), tmp7719)
 
-tmp7714 := PrimCons(sym_7, tmp7713)
+tmp7721 := PrimCons(sym_7, tmp7720)
 
-tmp7715 := PrimCons(MakeNumber(1), tmp7714)
+tmp7722 := PrimCons(MakeNumber(1), tmp7721)
 
-tmp7716 := PrimCons(symy_1or_1n_2, tmp7715)
+tmp7723 := PrimCons(symy_1or_1n_2, tmp7722)
 
-tmp7717 := PrimCons(MakeNumber(2), tmp7716)
+tmp7724 := PrimCons(MakeNumber(2), tmp7723)
 
-tmp7718 := PrimCons(symwrite_1to_1file, tmp7717)
+tmp7725 := PrimCons(symwrite_1to_1file, tmp7724)
 
-tmp7719 := PrimCons(MakeNumber(2), tmp7718)
+tmp7726 := PrimCons(MakeNumber(2), tmp7725)
 
-tmp7720 := PrimCons(symwrite_1byte, tmp7719)
+tmp7727 := PrimCons(symwrite_1byte, tmp7726)
 
-tmp7721 := PrimCons(MakeNumber(5), tmp7720)
+tmp7728 := PrimCons(MakeNumber(5), tmp7727)
 
-tmp7722 := PrimCons(symwhen, tmp7721)
+tmp7729 := PrimCons(symwhen, tmp7728)
 
-tmp7723 := PrimCons(MakeNumber(0), tmp7722)
+tmp7730 := PrimCons(MakeNumber(0), tmp7729)
 
-tmp7724 := PrimCons(symversion, tmp7723)
+tmp7731 := PrimCons(symversion, tmp7730)
 
-tmp7725 := PrimCons(MakeNumber(5), tmp7724)
+tmp7732 := PrimCons(MakeNumber(5), tmp7731)
 
-tmp7726 := PrimCons(symvar_2, tmp7725)
+tmp7733 := PrimCons(symvar_2, tmp7732)
 
-tmp7727 := PrimCons(MakeNumber(1), tmp7726)
+tmp7734 := PrimCons(MakeNumber(1), tmp7733)
 
-tmp7728 := PrimCons(symvariable_2, tmp7727)
+tmp7735 := PrimCons(symvariable_2, tmp7734)
 
-tmp7729 := PrimCons(MakeNumber(1), tmp7728)
+tmp7736 := PrimCons(MakeNumber(1), tmp7735)
 
-tmp7730 := PrimCons(symvalue, tmp7729)
+tmp7737 := PrimCons(symvalue, tmp7736)
 
-tmp7731 := PrimCons(MakeNumber(3), tmp7730)
+tmp7738 := PrimCons(MakeNumber(3), tmp7737)
 
-tmp7732 := PrimCons(symvector_1_6, tmp7731)
+tmp7739 := PrimCons(symvector_1_6, tmp7738)
 
-tmp7733 := PrimCons(MakeNumber(1), tmp7732)
+tmp7740 := PrimCons(MakeNumber(1), tmp7739)
 
-tmp7734 := PrimCons(symvector_2, tmp7733)
+tmp7741 := PrimCons(symvector_2, tmp7740)
 
-tmp7735 := PrimCons(MakeNumber(1), tmp7734)
+tmp7742 := PrimCons(MakeNumber(1), tmp7741)
 
-tmp7736 := PrimCons(symvector, tmp7735)
+tmp7743 := PrimCons(symvector, tmp7742)
 
-tmp7737 := PrimCons(MakeNumber(0), tmp7736)
+tmp7744 := PrimCons(MakeNumber(0), tmp7743)
 
-tmp7738 := PrimCons(symuserdefs, tmp7737)
+tmp7745 := PrimCons(symuserdefs, tmp7744)
 
-tmp7739 := PrimCons(MakeNumber(2), tmp7738)
+tmp7746 := PrimCons(MakeNumber(2), tmp7745)
 
-tmp7740 := PrimCons(symupdate_1lambda_1table, tmp7739)
+tmp7747 := PrimCons(symupdate_1lambda_1table, tmp7746)
 
-tmp7741 := PrimCons(MakeNumber(1), tmp7740)
+tmp7748 := PrimCons(MakeNumber(1), tmp7747)
 
-tmp7742 := PrimCons(symundefmacro, tmp7741)
+tmp7749 := PrimCons(symundefmacro, tmp7748)
 
-tmp7743 := PrimCons(MakeNumber(1), tmp7742)
+tmp7750 := PrimCons(MakeNumber(1), tmp7749)
 
-tmp7744 := PrimCons(symuntrack, tmp7743)
+tmp7751 := PrimCons(symuntrack, tmp7750)
 
-tmp7745 := PrimCons(MakeNumber(2), tmp7744)
+tmp7752 := PrimCons(MakeNumber(2), tmp7751)
 
-tmp7746 := PrimCons(symunion, tmp7745)
+tmp7753 := PrimCons(symunion, tmp7752)
 
-tmp7747 := PrimCons(MakeNumber(1), tmp7746)
+tmp7754 := PrimCons(MakeNumber(1), tmp7753)
 
-tmp7748 := PrimCons(symunprofile, tmp7747)
+tmp7755 := PrimCons(symunprofile, tmp7754)
 
-tmp7749 := PrimCons(MakeNumber(3), tmp7748)
+tmp7756 := PrimCons(MakeNumber(3), tmp7755)
 
-tmp7750 := PrimCons(symunput, tmp7749)
+tmp7757 := PrimCons(symunput, tmp7756)
 
-tmp7751 := PrimCons(MakeNumber(1), tmp7750)
+tmp7758 := PrimCons(MakeNumber(1), tmp7757)
 
-tmp7752 := PrimCons(symundefmacro, tmp7751)
+tmp7759 := PrimCons(symundefmacro, tmp7758)
 
-tmp7753 := PrimCons(MakeNumber(5), tmp7752)
+tmp7760 := PrimCons(MakeNumber(5), tmp7759)
 
-tmp7754 := PrimCons(symreturn, tmp7753)
+tmp7761 := PrimCons(symreturn, tmp7760)
 
-tmp7755 := PrimCons(MakeNumber(2), tmp7754)
+tmp7762 := PrimCons(MakeNumber(2), tmp7761)
 
-tmp7756 := PrimCons(symtype, tmp7755)
+tmp7763 := PrimCons(symtype, tmp7762)
 
-tmp7757 := PrimCons(MakeNumber(1), tmp7756)
+tmp7764 := PrimCons(MakeNumber(1), tmp7763)
 
-tmp7758 := PrimCons(symtuple_2, tmp7757)
+tmp7765 := PrimCons(symtuple_2, tmp7764)
 
-tmp7759 := PrimCons(MakeNumber(2), tmp7758)
+tmp7766 := PrimCons(MakeNumber(2), tmp7765)
 
-tmp7760 := PrimCons(symtrap_1error, tmp7759)
+tmp7767 := PrimCons(symtrap_1error, tmp7766)
 
-tmp7761 := PrimCons(MakeNumber(0), tmp7760)
+tmp7768 := PrimCons(MakeNumber(0), tmp7767)
 
-tmp7762 := PrimCons(symtracked, tmp7761)
+tmp7769 := PrimCons(symtracked, tmp7768)
 
-tmp7763 := PrimCons(MakeNumber(1), tmp7762)
+tmp7770 := PrimCons(MakeNumber(1), tmp7769)
 
-tmp7764 := PrimCons(symtrack, tmp7763)
+tmp7771 := PrimCons(symtrack, tmp7770)
 
-tmp7765 := PrimCons(MakeNumber(1), tmp7764)
+tmp7772 := PrimCons(MakeNumber(1), tmp7771)
 
-tmp7766 := PrimCons(symtlstr, tmp7765)
+tmp7773 := PrimCons(symtlstr, tmp7772)
 
-tmp7767 := PrimCons(MakeNumber(1), tmp7766)
+tmp7774 := PrimCons(MakeNumber(1), tmp7773)
 
-tmp7768 := PrimCons(symthaw, tmp7767)
+tmp7775 := PrimCons(symthaw, tmp7774)
 
-tmp7769 := PrimCons(MakeNumber(0), tmp7768)
+tmp7776 := PrimCons(MakeNumber(0), tmp7775)
 
-tmp7770 := PrimCons(symtc_2, tmp7769)
+tmp7777 := PrimCons(symtc_2, tmp7776)
 
-tmp7771 := PrimCons(MakeNumber(1), tmp7770)
+tmp7778 := PrimCons(MakeNumber(1), tmp7777)
 
-tmp7772 := PrimCons(symtc, tmp7771)
+tmp7779 := PrimCons(symtc, tmp7778)
 
-tmp7773 := PrimCons(MakeNumber(1), tmp7772)
+tmp7780 := PrimCons(MakeNumber(1), tmp7779)
 
-tmp7774 := PrimCons(symtl, tmp7773)
+tmp7781 := PrimCons(symtl, tmp7780)
 
-tmp7775 := PrimCons(MakeNumber(1), tmp7774)
+tmp7782 := PrimCons(MakeNumber(1), tmp7781)
 
-tmp7776 := PrimCons(symtail, tmp7775)
+tmp7783 := PrimCons(symtail, tmp7782)
 
-tmp7777 := PrimCons(MakeNumber(1), tmp7776)
+tmp7784 := PrimCons(MakeNumber(1), tmp7783)
 
-tmp7778 := PrimCons(symsystemf, tmp7777)
+tmp7785 := PrimCons(symsystemf, tmp7784)
 
-tmp7779 := PrimCons(MakeNumber(1), tmp7778)
+tmp7786 := PrimCons(MakeNumber(1), tmp7785)
 
-tmp7780 := PrimCons(symsymbol_2, tmp7779)
+tmp7787 := PrimCons(symsymbol_2, tmp7786)
 
-tmp7781 := PrimCons(MakeNumber(1), tmp7780)
+tmp7788 := PrimCons(MakeNumber(1), tmp7787)
 
-tmp7782 := PrimCons(symsum, tmp7781)
+tmp7789 := PrimCons(symsum, tmp7788)
 
-tmp7783 := PrimCons(MakeNumber(3), tmp7782)
+tmp7790 := PrimCons(MakeNumber(3), tmp7789)
 
-tmp7784 := PrimCons(symsubst, tmp7783)
+tmp7791 := PrimCons(symsubst, tmp7790)
 
-tmp7785 := PrimCons(MakeNumber(1), tmp7784)
+tmp7792 := PrimCons(MakeNumber(1), tmp7791)
 
-tmp7786 := PrimCons(symstring_2, tmp7785)
+tmp7793 := PrimCons(symstring_2, tmp7792)
 
-tmp7787 := PrimCons(MakeNumber(1), tmp7786)
+tmp7794 := PrimCons(MakeNumber(1), tmp7793)
 
-tmp7788 := PrimCons(symstring_1_6symbol, tmp7787)
+tmp7795 := PrimCons(symstring_1_6symbol, tmp7794)
 
-tmp7789 := PrimCons(MakeNumber(1), tmp7788)
+tmp7796 := PrimCons(MakeNumber(1), tmp7795)
 
-tmp7790 := PrimCons(symstring_1_6n, tmp7789)
+tmp7797 := PrimCons(symstring_1_6n, tmp7796)
 
-tmp7791 := PrimCons(MakeNumber(1), tmp7790)
+tmp7798 := PrimCons(MakeNumber(1), tmp7797)
 
-tmp7792 := PrimCons(symstr, tmp7791)
+tmp7799 := PrimCons(symstr, tmp7798)
 
-tmp7793 := PrimCons(MakeNumber(0), tmp7792)
+tmp7800 := PrimCons(MakeNumber(0), tmp7799)
 
-tmp7794 := PrimCons(symstoutput, tmp7793)
+tmp7801 := PrimCons(symstoutput, tmp7800)
 
-tmp7795 := PrimCons(MakeNumber(0), tmp7794)
+tmp7802 := PrimCons(MakeNumber(0), tmp7801)
 
-tmp7796 := PrimCons(symstinput, tmp7795)
+tmp7803 := PrimCons(symstinput, tmp7802)
 
-tmp7797 := PrimCons(MakeNumber(0), tmp7796)
+tmp7804 := PrimCons(MakeNumber(0), tmp7803)
 
-tmp7798 := PrimCons(symstep_2, tmp7797)
+tmp7805 := PrimCons(symstep_2, tmp7804)
 
-tmp7799 := PrimCons(MakeNumber(1), tmp7798)
+tmp7806 := PrimCons(MakeNumber(1), tmp7805)
 
-tmp7800 := PrimCons(symstep, tmp7799)
+tmp7807 := PrimCons(symstep, tmp7806)
 
-tmp7801 := PrimCons(MakeNumber(0), tmp7800)
+tmp7808 := PrimCons(MakeNumber(0), tmp7807)
 
-tmp7802 := PrimCons(symspy_2, tmp7801)
+tmp7809 := PrimCons(symspy_2, tmp7808)
 
-tmp7803 := PrimCons(MakeNumber(1), tmp7802)
+tmp7810 := PrimCons(MakeNumber(1), tmp7809)
 
-tmp7804 := PrimCons(symspy, tmp7803)
+tmp7811 := PrimCons(symspy, tmp7810)
 
-tmp7805 := PrimCons(MakeNumber(2), tmp7804)
+tmp7812 := PrimCons(MakeNumber(2), tmp7811)
 
-tmp7806 := PrimCons(symspecialise, tmp7805)
+tmp7813 := PrimCons(symspecialise, tmp7812)
 
-tmp7807 := PrimCons(MakeNumber(1), tmp7806)
+tmp7814 := PrimCons(MakeNumber(1), tmp7813)
 
-tmp7808 := PrimCons(symsnd, tmp7807)
+tmp7815 := PrimCons(symsnd, tmp7814)
 
-tmp7809 := PrimCons(MakeNumber(1), tmp7808)
+tmp7816 := PrimCons(MakeNumber(1), tmp7815)
 
-tmp7810 := PrimCons(symsimple_1error, tmp7809)
+tmp7817 := PrimCons(symsimple_1error, tmp7816)
 
-tmp7811 := PrimCons(MakeNumber(2), tmp7810)
+tmp7818 := PrimCons(MakeNumber(2), tmp7817)
 
-tmp7812 := PrimCons(symset, tmp7811)
+tmp7819 := PrimCons(symset, tmp7818)
 
-tmp7813 := PrimCons(MakeNumber(1), tmp7812)
+tmp7820 := PrimCons(MakeNumber(1), tmp7819)
 
-tmp7814 := PrimCons(symreverse, tmp7813)
+tmp7821 := PrimCons(symreverse, tmp7820)
 
-tmp7815 := PrimCons(MakeNumber(2), tmp7814)
+tmp7822 := PrimCons(MakeNumber(2), tmp7821)
 
-tmp7816 := PrimCons(symremove, tmp7815)
+tmp7823 := PrimCons(symremove, tmp7822)
 
-tmp7817 := PrimCons(MakeNumber(0), tmp7816)
+tmp7824 := PrimCons(MakeNumber(0), tmp7823)
 
-tmp7818 := PrimCons(symrelease, tmp7817)
+tmp7825 := PrimCons(symrelease, tmp7824)
 
-tmp7819 := PrimCons(MakeNumber(1), tmp7818)
+tmp7826 := PrimCons(MakeNumber(1), tmp7825)
 
-tmp7820 := PrimCons(symreceive, tmp7819)
+tmp7827 := PrimCons(symreceive, tmp7826)
 
-tmp7821 := PrimCons(MakeNumber(1), tmp7820)
+tmp7828 := PrimCons(MakeNumber(1), tmp7827)
 
-tmp7822 := PrimCons(symshen_4read_1unit_1string, tmp7821)
+tmp7829 := PrimCons(symshen_4read_1unit_1string, tmp7828)
 
-tmp7823 := PrimCons(MakeNumber(1), tmp7822)
+tmp7830 := PrimCons(MakeNumber(1), tmp7829)
 
-tmp7824 := PrimCons(symread_1from_1string_1unprocessed, tmp7823)
+tmp7831 := PrimCons(symread_1from_1string_1unprocessed, tmp7830)
 
-tmp7825 := PrimCons(MakeNumber(1), tmp7824)
+tmp7832 := PrimCons(MakeNumber(1), tmp7831)
 
-tmp7826 := PrimCons(symread_1from_1string, tmp7825)
+tmp7833 := PrimCons(symread_1from_1string, tmp7832)
 
-tmp7827 := PrimCons(MakeNumber(1), tmp7826)
+tmp7834 := PrimCons(MakeNumber(1), tmp7833)
 
-tmp7828 := PrimCons(symread_1byte, tmp7827)
+tmp7835 := PrimCons(symread_1byte, tmp7834)
 
-tmp7829 := PrimCons(MakeNumber(1), tmp7828)
+tmp7836 := PrimCons(MakeNumber(1), tmp7835)
 
-tmp7830 := PrimCons(symread, tmp7829)
+tmp7837 := PrimCons(symread, tmp7836)
 
-tmp7831 := PrimCons(MakeNumber(1), tmp7830)
+tmp7838 := PrimCons(MakeNumber(1), tmp7837)
 
-tmp7832 := PrimCons(symread_1file, tmp7831)
+tmp7839 := PrimCons(symread_1file, tmp7838)
 
-tmp7833 := PrimCons(MakeNumber(1), tmp7832)
+tmp7840 := PrimCons(MakeNumber(1), tmp7839)
 
-tmp7834 := PrimCons(symread_1file_1as_1bytelist, tmp7833)
+tmp7841 := PrimCons(symread_1file_1as_1bytelist, tmp7840)
 
-tmp7835 := PrimCons(MakeNumber(1), tmp7834)
+tmp7842 := PrimCons(MakeNumber(1), tmp7841)
 
-tmp7836 := PrimCons(symread_1file_1as_1string, tmp7835)
+tmp7843 := PrimCons(symread_1file_1as_1string, tmp7842)
 
-tmp7837 := PrimCons(MakeNumber(4), tmp7836)
+tmp7844 := PrimCons(MakeNumber(4), tmp7843)
 
-tmp7838 := PrimCons(symput, tmp7837)
+tmp7845 := PrimCons(symput, tmp7844)
 
-tmp7839 := PrimCons(MakeNumber(1), tmp7838)
+tmp7846 := PrimCons(MakeNumber(1), tmp7845)
 
-tmp7840 := PrimCons(symprotect, tmp7839)
+tmp7847 := PrimCons(symprotect, tmp7846)
 
-tmp7841 := PrimCons(MakeNumber(1), tmp7840)
+tmp7848 := PrimCons(MakeNumber(1), tmp7847)
 
-tmp7842 := PrimCons(sympreclude_1all_1but, tmp7841)
+tmp7849 := PrimCons(sympreclude_1all_1but, tmp7848)
 
-tmp7843 := PrimCons(MakeNumber(1), tmp7842)
+tmp7850 := PrimCons(MakeNumber(1), tmp7849)
 
-tmp7844 := PrimCons(sympreclude, tmp7843)
+tmp7851 := PrimCons(sympreclude, tmp7850)
 
-tmp7845 := PrimCons(MakeNumber(1), tmp7844)
+tmp7852 := PrimCons(MakeNumber(1), tmp7851)
 
-tmp7846 := PrimCons(symps, tmp7845)
+tmp7853 := PrimCons(symps, tmp7852)
 
-tmp7847 := PrimCons(MakeNumber(2), tmp7846)
+tmp7854 := PrimCons(MakeNumber(2), tmp7853)
 
-tmp7848 := PrimCons(sympr, tmp7847)
+tmp7855 := PrimCons(sympr, tmp7854)
 
-tmp7849 := PrimCons(MakeNumber(1), tmp7848)
+tmp7856 := PrimCons(MakeNumber(1), tmp7855)
 
-tmp7850 := PrimCons(symprofile_1results, tmp7849)
+tmp7857 := PrimCons(symprofile_1results, tmp7856)
 
-tmp7851 := PrimCons(MakeNumber(1), tmp7850)
+tmp7858 := PrimCons(MakeNumber(1), tmp7857)
 
-tmp7852 := PrimCons(symprolog_1memory, tmp7851)
+tmp7859 := PrimCons(symprolog_1memory, tmp7858)
 
-tmp7853 := PrimCons(MakeNumber(1), tmp7852)
+tmp7860 := PrimCons(MakeNumber(1), tmp7859)
 
-tmp7854 := PrimCons(symshen_4printF, tmp7853)
+tmp7861 := PrimCons(symshen_4printF, tmp7860)
 
-tmp7855 := PrimCons(MakeNumber(1), tmp7854)
+tmp7862 := PrimCons(MakeNumber(1), tmp7861)
 
-tmp7856 := PrimCons(symshen_4print_1freshterm, tmp7855)
+tmp7863 := PrimCons(symshen_4print_1freshterm, tmp7862)
 
-tmp7857 := PrimCons(MakeNumber(1), tmp7856)
+tmp7864 := PrimCons(MakeNumber(1), tmp7863)
 
-tmp7858 := PrimCons(symshen_4print_1prolog_1vector, tmp7857)
+tmp7865 := PrimCons(symshen_4print_1prolog_1vector, tmp7864)
 
-tmp7859 := PrimCons(MakeNumber(1), tmp7858)
+tmp7866 := PrimCons(MakeNumber(1), tmp7865)
 
-tmp7860 := PrimCons(symprofile, tmp7859)
+tmp7867 := PrimCons(symprofile, tmp7866)
 
-tmp7861 := PrimCons(MakeNumber(1), tmp7860)
+tmp7868 := PrimCons(MakeNumber(1), tmp7867)
 
-tmp7862 := PrimCons(symprint, tmp7861)
+tmp7869 := PrimCons(symprint, tmp7868)
 
-tmp7863 := PrimCons(MakeNumber(1), tmp7862)
+tmp7870 := PrimCons(MakeNumber(1), tmp7869)
 
-tmp7864 := PrimCons(sympreclude_1all_1but, tmp7863)
+tmp7871 := PrimCons(sympreclude_1all_1but, tmp7870)
 
-tmp7865 := PrimCons(MakeNumber(2), tmp7864)
+tmp7872 := PrimCons(MakeNumber(2), tmp7871)
 
-tmp7866 := PrimCons(sympos, tmp7865)
+tmp7873 := PrimCons(sympos, tmp7872)
 
-tmp7867 := PrimCons(MakeNumber(0), tmp7866)
+tmp7874 := PrimCons(MakeNumber(0), tmp7873)
 
-tmp7868 := PrimCons(symporters, tmp7867)
+tmp7875 := PrimCons(symporters, tmp7874)
 
-tmp7869 := PrimCons(MakeNumber(0), tmp7868)
+tmp7876 := PrimCons(MakeNumber(0), tmp7875)
 
-tmp7870 := PrimCons(symport, tmp7869)
+tmp7877 := PrimCons(symport, tmp7876)
 
-tmp7871 := PrimCons(MakeNumber(1), tmp7870)
+tmp7878 := PrimCons(MakeNumber(1), tmp7877)
 
-tmp7872 := PrimCons(sympackage_2, tmp7871)
+tmp7879 := PrimCons(sympackage_2, tmp7878)
 
-tmp7873 := PrimCons(MakeNumber(3), tmp7872)
+tmp7880 := PrimCons(MakeNumber(3), tmp7879)
 
-tmp7874 := PrimCons(sympackage, tmp7873)
+tmp7881 := PrimCons(sympackage, tmp7880)
 
-tmp7875 := PrimCons(MakeNumber(0), tmp7874)
+tmp7882 := PrimCons(MakeNumber(0), tmp7881)
 
-tmp7876 := PrimCons(symos, tmp7875)
+tmp7883 := PrimCons(symos, tmp7882)
 
-tmp7877 := PrimCons(MakeNumber(2), tmp7876)
+tmp7884 := PrimCons(MakeNumber(2), tmp7883)
 
-tmp7878 := PrimCons(symor, tmp7877)
+tmp7885 := PrimCons(symor, tmp7884)
 
-tmp7879 := PrimCons(MakeNumber(0), tmp7878)
+tmp7886 := PrimCons(MakeNumber(0), tmp7885)
 
-tmp7880 := PrimCons(symoptimise_2, tmp7879)
+tmp7887 := PrimCons(symoptimise_2, tmp7886)
 
-tmp7881 := PrimCons(MakeNumber(1), tmp7880)
+tmp7888 := PrimCons(MakeNumber(1), tmp7887)
 
-tmp7882 := PrimCons(symoptimise, tmp7881)
+tmp7889 := PrimCons(symoptimise, tmp7888)
 
-tmp7883 := PrimCons(MakeNumber(2), tmp7882)
+tmp7890 := PrimCons(MakeNumber(2), tmp7889)
 
-tmp7884 := PrimCons(symopen, tmp7883)
+tmp7891 := PrimCons(symopen, tmp7890)
 
-tmp7885 := PrimCons(MakeNumber(1), tmp7884)
+tmp7892 := PrimCons(MakeNumber(1), tmp7891)
 
-tmp7886 := PrimCons(symoccurs_1check, tmp7885)
+tmp7893 := PrimCons(symoccurs_1check, tmp7892)
 
-tmp7887 := PrimCons(MakeNumber(0), tmp7886)
+tmp7894 := PrimCons(MakeNumber(0), tmp7893)
 
-tmp7888 := PrimCons(symoccurs_2, tmp7887)
+tmp7895 := PrimCons(symoccurs_2, tmp7894)
 
-tmp7889 := PrimCons(MakeNumber(2), tmp7888)
+tmp7896 := PrimCons(MakeNumber(2), tmp7895)
 
-tmp7890 := PrimCons(symoccurrences, tmp7889)
+tmp7897 := PrimCons(symoccurrences, tmp7896)
 
-tmp7891 := PrimCons(MakeNumber(1), tmp7890)
+tmp7898 := PrimCons(MakeNumber(1), tmp7897)
 
-tmp7892 := PrimCons(symoccurs_1check, tmp7891)
+tmp7899 := PrimCons(symoccurs_1check, tmp7898)
 
-tmp7893 := PrimCons(MakeNumber(1), tmp7892)
+tmp7900 := PrimCons(MakeNumber(1), tmp7899)
 
-tmp7894 := PrimCons(symnumber_2, tmp7893)
+tmp7901 := PrimCons(symnumber_2, tmp7900)
 
-tmp7895 := PrimCons(MakeNumber(1), tmp7894)
+tmp7902 := PrimCons(MakeNumber(1), tmp7901)
 
-tmp7896 := PrimCons(symn_1_6string, tmp7895)
+tmp7903 := PrimCons(symn_1_6string, tmp7902)
 
-tmp7897 := PrimCons(MakeNumber(2), tmp7896)
+tmp7904 := PrimCons(MakeNumber(2), tmp7903)
 
-tmp7898 := PrimCons(symnth, tmp7897)
+tmp7905 := PrimCons(symnth, tmp7904)
 
-tmp7899 := PrimCons(MakeNumber(1), tmp7898)
+tmp7906 := PrimCons(MakeNumber(1), tmp7905)
 
-tmp7900 := PrimCons(symnot, tmp7899)
+tmp7907 := PrimCons(symnot, tmp7906)
 
-tmp7901 := PrimCons(MakeNumber(1), tmp7900)
+tmp7908 := PrimCons(MakeNumber(1), tmp7907)
 
-tmp7902 := PrimCons(symnl, tmp7901)
+tmp7909 := PrimCons(symnl, tmp7908)
 
-tmp7903 := PrimCons(MakeNumber(1), tmp7902)
+tmp7910 := PrimCons(MakeNumber(1), tmp7909)
 
-tmp7904 := PrimCons(symmaxinferences, tmp7903)
+tmp7911 := PrimCons(symmaxinferences, tmp7910)
 
-tmp7905 := PrimCons(MakeNumber(2), tmp7904)
+tmp7912 := PrimCons(MakeNumber(2), tmp7911)
 
-tmp7906 := PrimCons(symmapcan, tmp7905)
+tmp7913 := PrimCons(symmapcan, tmp7912)
 
-tmp7907 := PrimCons(MakeNumber(2), tmp7906)
+tmp7914 := PrimCons(MakeNumber(2), tmp7913)
 
-tmp7908 := PrimCons(symmap, tmp7907)
+tmp7915 := PrimCons(symmap, tmp7914)
 
-tmp7909 := PrimCons(MakeNumber(1), tmp7908)
+tmp7916 := PrimCons(MakeNumber(1), tmp7915)
 
-tmp7910 := PrimCons(symmacroexpand, tmp7909)
+tmp7917 := PrimCons(symmacroexpand, tmp7916)
 
-tmp7911 := PrimCons(MakeNumber(1), tmp7910)
+tmp7918 := PrimCons(MakeNumber(1), tmp7917)
 
-tmp7912 := PrimCons(symvector, tmp7911)
+tmp7919 := PrimCons(symvector, tmp7918)
 
-tmp7913 := PrimCons(MakeNumber(2), tmp7912)
+tmp7920 := PrimCons(MakeNumber(2), tmp7919)
 
-tmp7914 := PrimCons(sym_5_a, tmp7913)
+tmp7921 := PrimCons(sym_5_a, tmp7920)
 
-tmp7915 := PrimCons(MakeNumber(2), tmp7914)
+tmp7922 := PrimCons(MakeNumber(2), tmp7921)
 
-tmp7916 := PrimCons(sym_5, tmp7915)
+tmp7923 := PrimCons(sym_5, tmp7922)
 
-tmp7917 := PrimCons(MakeNumber(1), tmp7916)
+tmp7924 := PrimCons(MakeNumber(1), tmp7923)
 
-tmp7918 := PrimCons(symload, tmp7917)
+tmp7925 := PrimCons(symload, tmp7924)
 
-tmp7919 := PrimCons(MakeNumber(1), tmp7918)
+tmp7926 := PrimCons(MakeNumber(1), tmp7925)
 
-tmp7920 := PrimCons(symlist, tmp7919)
+tmp7927 := PrimCons(symlist, tmp7926)
 
-tmp7921 := PrimCons(MakeNumber(1), tmp7920)
+tmp7928 := PrimCons(MakeNumber(1), tmp7927)
 
-tmp7922 := PrimCons(symlineread, tmp7921)
+tmp7929 := PrimCons(symlineread, tmp7928)
 
-tmp7923 := PrimCons(MakeNumber(1), tmp7922)
+tmp7930 := PrimCons(MakeNumber(1), tmp7929)
 
-tmp7924 := PrimCons(symlimit, tmp7923)
+tmp7931 := PrimCons(symlimit, tmp7930)
 
-tmp7925 := PrimCons(MakeNumber(1), tmp7924)
+tmp7932 := PrimCons(MakeNumber(1), tmp7931)
 
-tmp7926 := PrimCons(symlength, tmp7925)
+tmp7933 := PrimCons(symlength, tmp7932)
 
-tmp7927 := PrimCons(MakeNumber(0), tmp7926)
+tmp7934 := PrimCons(MakeNumber(0), tmp7933)
 
-tmp7928 := PrimCons(symlanguage, tmp7927)
+tmp7935 := PrimCons(symlanguage, tmp7934)
 
-tmp7929 := PrimCons(MakeNumber(6), tmp7928)
+tmp7936 := PrimCons(MakeNumber(6), tmp7935)
 
-tmp7930 := PrimCons(symis_b, tmp7929)
+tmp7937 := PrimCons(symis_b, tmp7936)
 
-tmp7931 := PrimCons(MakeNumber(6), tmp7930)
+tmp7938 := PrimCons(MakeNumber(6), tmp7937)
 
-tmp7932 := PrimCons(symis, tmp7931)
+tmp7939 := PrimCons(symis, tmp7938)
 
-tmp7933 := PrimCons(MakeNumber(0), tmp7932)
+tmp7940 := PrimCons(MakeNumber(0), tmp7939)
 
-tmp7934 := PrimCons(symit, tmp7933)
+tmp7941 := PrimCons(symit, tmp7940)
 
-tmp7935 := PrimCons(MakeNumber(1), tmp7934)
+tmp7942 := PrimCons(MakeNumber(1), tmp7941)
 
-tmp7936 := PrimCons(syminternal, tmp7935)
+tmp7943 := PrimCons(syminternal, tmp7942)
 
-tmp7937 := PrimCons(MakeNumber(2), tmp7936)
+tmp7944 := PrimCons(MakeNumber(2), tmp7943)
 
-tmp7938 := PrimCons(symintersection, tmp7937)
+tmp7945 := PrimCons(symintersection, tmp7944)
 
-tmp7939 := PrimCons(MakeNumber(1), tmp7938)
+tmp7946 := PrimCons(MakeNumber(1), tmp7945)
 
-tmp7940 := PrimCons(syminclude_1all_1but, tmp7939)
+tmp7947 := PrimCons(syminclude_1all_1but, tmp7946)
 
-tmp7941 := PrimCons(MakeNumber(0), tmp7940)
+tmp7948 := PrimCons(MakeNumber(0), tmp7947)
 
-tmp7942 := PrimCons(symimplementation, tmp7941)
+tmp7949 := PrimCons(symimplementation, tmp7948)
 
-tmp7943 := PrimCons(MakeNumber(2), tmp7942)
+tmp7950 := PrimCons(MakeNumber(2), tmp7949)
 
-tmp7944 := PrimCons(syminput_7, tmp7943)
+tmp7951 := PrimCons(syminput_7, tmp7950)
 
-tmp7945 := PrimCons(MakeNumber(1), tmp7944)
+tmp7952 := PrimCons(MakeNumber(1), tmp7951)
 
-tmp7946 := PrimCons(syminput, tmp7945)
+tmp7953 := PrimCons(syminput, tmp7952)
 
-tmp7947 := PrimCons(MakeNumber(0), tmp7946)
+tmp7954 := PrimCons(MakeNumber(0), tmp7953)
 
-tmp7948 := PrimCons(syminferences, tmp7947)
+tmp7955 := PrimCons(syminferences, tmp7954)
 
-tmp7949 := PrimCons(MakeNumber(1), tmp7948)
+tmp7956 := PrimCons(MakeNumber(1), tmp7955)
 
-tmp7950 := PrimCons(symintern, tmp7949)
+tmp7957 := PrimCons(symintern, tmp7956)
 
-tmp7951 := PrimCons(MakeNumber(1), tmp7950)
+tmp7958 := PrimCons(MakeNumber(1), tmp7957)
 
-tmp7952 := PrimCons(syminternal, tmp7951)
+tmp7959 := PrimCons(syminternal, tmp7958)
 
-tmp7953 := PrimCons(MakeNumber(1), tmp7952)
+tmp7960 := PrimCons(MakeNumber(1), tmp7959)
 
-tmp7954 := PrimCons(syminteger_2, tmp7953)
+tmp7961 := PrimCons(syminteger_2, tmp7960)
 
-tmp7955 := PrimCons(MakeNumber(1), tmp7954)
+tmp7962 := PrimCons(MakeNumber(1), tmp7961)
 
-tmp7956 := PrimCons(symin_1package, tmp7955)
+tmp7963 := PrimCons(symin_1package, tmp7962)
 
-tmp7957 := PrimCons(MakeNumber(0), tmp7956)
+tmp7964 := PrimCons(MakeNumber(0), tmp7963)
 
-tmp7958 := PrimCons(symincluded, tmp7957)
+tmp7965 := PrimCons(symincluded, tmp7964)
 
-tmp7959 := PrimCons(MakeNumber(1), tmp7958)
+tmp7966 := PrimCons(MakeNumber(1), tmp7965)
 
-tmp7960 := PrimCons(syminclude, tmp7959)
+tmp7967 := PrimCons(syminclude, tmp7966)
 
-tmp7961 := PrimCons(MakeNumber(3), tmp7960)
+tmp7968 := PrimCons(MakeNumber(3), tmp7967)
 
-tmp7962 := PrimCons(symif, tmp7961)
+tmp7969 := PrimCons(symif, tmp7968)
 
-tmp7963 := PrimCons(MakeNumber(1), tmp7962)
+tmp7970 := PrimCons(MakeNumber(1), tmp7969)
 
-tmp7964 := PrimCons(symhush, tmp7963)
+tmp7971 := PrimCons(symhush, tmp7970)
 
-tmp7965 := PrimCons(MakeNumber(0), tmp7964)
+tmp7972 := PrimCons(MakeNumber(0), tmp7971)
 
-tmp7966 := PrimCons(symhush_2, tmp7965)
+tmp7973 := PrimCons(symhush_2, tmp7972)
 
-tmp7967 := PrimCons(MakeNumber(1), tmp7966)
+tmp7974 := PrimCons(MakeNumber(1), tmp7973)
 
-tmp7968 := PrimCons(symhead, tmp7967)
+tmp7975 := PrimCons(symhead, tmp7974)
 
-tmp7969 := PrimCons(MakeNumber(1), tmp7968)
+tmp7976 := PrimCons(MakeNumber(1), tmp7975)
 
-tmp7970 := PrimCons(symhdstr, tmp7969)
+tmp7977 := PrimCons(symhdstr, tmp7976)
 
-tmp7971 := PrimCons(MakeNumber(1), tmp7970)
+tmp7978 := PrimCons(MakeNumber(1), tmp7977)
 
-tmp7972 := PrimCons(symhdv, tmp7971)
+tmp7979 := PrimCons(symhdv, tmp7978)
 
-tmp7973 := PrimCons(MakeNumber(1), tmp7972)
+tmp7980 := PrimCons(MakeNumber(1), tmp7979)
 
-tmp7974 := PrimCons(symhd, tmp7973)
+tmp7981 := PrimCons(symhd, tmp7980)
 
-tmp7975 := PrimCons(MakeNumber(2), tmp7974)
+tmp7982 := PrimCons(MakeNumber(2), tmp7981)
 
-tmp7976 := PrimCons(symhash, tmp7975)
+tmp7983 := PrimCons(symhash, tmp7982)
 
-tmp7977 := PrimCons(MakeNumber(2), tmp7976)
+tmp7984 := PrimCons(MakeNumber(2), tmp7983)
 
-tmp7978 := PrimCons(sym_a, tmp7977)
+tmp7985 := PrimCons(sym_a, tmp7984)
 
-tmp7979 := PrimCons(MakeNumber(2), tmp7978)
+tmp7986 := PrimCons(MakeNumber(2), tmp7985)
 
-tmp7980 := PrimCons(sym_6_a, tmp7979)
+tmp7987 := PrimCons(sym_6_a, tmp7986)
 
-tmp7981 := PrimCons(MakeNumber(2), tmp7980)
+tmp7988 := PrimCons(MakeNumber(2), tmp7987)
 
-tmp7982 := PrimCons(sym_6, tmp7981)
+tmp7989 := PrimCons(sym_6, tmp7988)
 
-tmp7983 := PrimCons(MakeNumber(2), tmp7982)
+tmp7990 := PrimCons(MakeNumber(2), tmp7989)
 
-tmp7984 := PrimCons(sym_5_1vector, tmp7983)
+tmp7991 := PrimCons(sym_5_1vector, tmp7990)
 
-tmp7985 := PrimCons(MakeNumber(2), tmp7984)
+tmp7992 := PrimCons(MakeNumber(2), tmp7991)
 
-tmp7986 := PrimCons(sym_5_1address, tmp7985)
+tmp7993 := PrimCons(sym_5_1address, tmp7992)
 
-tmp7987 := PrimCons(MakeNumber(3), tmp7986)
+tmp7994 := PrimCons(MakeNumber(3), tmp7993)
 
-tmp7988 := PrimCons(symaddress_1_6, tmp7987)
+tmp7995 := PrimCons(symaddress_1_6, tmp7994)
 
-tmp7989 := PrimCons(MakeNumber(1), tmp7988)
+tmp7996 := PrimCons(MakeNumber(1), tmp7995)
 
-tmp7990 := PrimCons(symget_1time, tmp7989)
+tmp7997 := PrimCons(symget_1time, tmp7996)
 
-tmp7991 := PrimCons(MakeNumber(3), tmp7990)
+tmp7998 := PrimCons(MakeNumber(3), tmp7997)
 
-tmp7992 := PrimCons(symget, tmp7991)
+tmp7999 := PrimCons(symget, tmp7998)
 
-tmp7993 := PrimCons(MakeNumber(1), tmp7992)
+tmp8000 := PrimCons(MakeNumber(1), tmp7999)
 
-tmp7994 := PrimCons(symgensym, tmp7993)
+tmp8001 := PrimCons(symgensym, tmp8000)
 
-tmp7995 := PrimCons(MakeNumber(1), tmp7994)
+tmp8002 := PrimCons(MakeNumber(1), tmp8001)
 
-tmp7996 := PrimCons(symfunction, tmp7995)
+tmp8003 := PrimCons(symfunction, tmp8002)
 
-tmp7997 := PrimCons(MakeNumber(1), tmp7996)
+tmp8004 := PrimCons(MakeNumber(1), tmp8003)
 
-tmp7998 := PrimCons(symfn, tmp7997)
+tmp8005 := PrimCons(symfn, tmp8004)
 
-tmp7999 := PrimCons(MakeNumber(1), tmp7998)
+tmp8006 := PrimCons(MakeNumber(1), tmp8005)
 
-tmp8000 := PrimCons(symfst, tmp7999)
+tmp8007 := PrimCons(symfst, tmp8006)
 
-tmp8001 := PrimCons(MakeNumber(0), tmp8000)
+tmp8008 := PrimCons(MakeNumber(0), tmp8007)
 
-tmp8002 := PrimCons(symfresh, tmp8001)
+tmp8009 := PrimCons(symfresh, tmp8008)
 
-tmp8003 := PrimCons(MakeNumber(1), tmp8002)
+tmp8010 := PrimCons(MakeNumber(1), tmp8009)
 
-tmp8004 := PrimCons(symfreeze, tmp8003)
+tmp8011 := PrimCons(symfreeze, tmp8010)
 
-tmp8005 := PrimCons(MakeNumber(5), tmp8004)
+tmp8012 := PrimCons(MakeNumber(5), tmp8011)
 
-tmp8006 := PrimCons(symfork, tmp8005)
+tmp8013 := PrimCons(symfork, tmp8012)
 
-tmp8007 := PrimCons(MakeNumber(1), tmp8006)
+tmp8014 := PrimCons(MakeNumber(1), tmp8013)
 
-tmp8008 := PrimCons(symforeign, tmp8007)
+tmp8015 := PrimCons(symforeign, tmp8014)
 
-tmp8009 := PrimCons(MakeNumber(7), tmp8008)
+tmp8016 := PrimCons(MakeNumber(7), tmp8015)
 
-tmp8010 := PrimCons(symfindall, tmp8009)
+tmp8017 := PrimCons(symfindall, tmp8016)
 
-tmp8011 := PrimCons(MakeNumber(2), tmp8010)
+tmp8018 := PrimCons(MakeNumber(2), tmp8017)
 
-tmp8012 := PrimCons(symfix, tmp8011)
+tmp8019 := PrimCons(symfix, tmp8018)
 
-tmp8013 := PrimCons(MakeNumber(0), tmp8012)
+tmp8020 := PrimCons(MakeNumber(0), tmp8019)
 
-tmp8014 := PrimCons(symfail, tmp8013)
+tmp8021 := PrimCons(symfail, tmp8020)
 
-tmp8015 := PrimCons(MakeNumber(2), tmp8014)
+tmp8022 := PrimCons(MakeNumber(2), tmp8021)
 
-tmp8016 := PrimCons(symfail_1if, tmp8015)
+tmp8023 := PrimCons(symfail_1if, tmp8022)
 
-tmp8017 := PrimCons(MakeNumber(0), tmp8016)
+tmp8024 := PrimCons(MakeNumber(0), tmp8023)
 
-tmp8018 := PrimCons(symfactorise_2, tmp8017)
+tmp8025 := PrimCons(symfactorise_2, tmp8024)
 
-tmp8019 := PrimCons(MakeNumber(1), tmp8018)
+tmp8026 := PrimCons(MakeNumber(1), tmp8025)
 
-tmp8020 := PrimCons(symfactorise, tmp8019)
+tmp8027 := PrimCons(symfactorise, tmp8026)
 
-tmp8021 := PrimCons(MakeNumber(1), tmp8020)
+tmp8028 := PrimCons(MakeNumber(1), tmp8027)
 
-tmp8022 := PrimCons(symexternal, tmp8021)
+tmp8029 := PrimCons(symexternal, tmp8028)
 
-tmp8023 := PrimCons(MakeNumber(1), tmp8022)
+tmp8030 := PrimCons(MakeNumber(1), tmp8029)
 
-tmp8024 := PrimCons(symexplode, tmp8023)
+tmp8031 := PrimCons(symexplode, tmp8030)
 
-tmp8025 := PrimCons(MakeNumber(1), tmp8024)
+tmp8032 := PrimCons(MakeNumber(1), tmp8031)
 
-tmp8026 := PrimCons(symeval_1kl, tmp8025)
+tmp8033 := PrimCons(symeval_1kl, tmp8032)
 
-tmp8027 := PrimCons(MakeNumber(1), tmp8026)
+tmp8034 := PrimCons(MakeNumber(1), tmp8033)
 
-tmp8028 := PrimCons(symeval, tmp8027)
+tmp8035 := PrimCons(symeval, tmp8034)
 
-tmp8029 := PrimCons(MakeNumber(1), tmp8028)
+tmp8036 := PrimCons(MakeNumber(1), tmp8035)
 
-tmp8030 := PrimCons(symerror_1to_1string, tmp8029)
+tmp8037 := PrimCons(symerror_1to_1string, tmp8036)
 
-tmp8031 := PrimCons(MakeNumber(1), tmp8030)
+tmp8038 := PrimCons(MakeNumber(1), tmp8037)
 
-tmp8032 := PrimCons(symexternal, tmp8031)
+tmp8039 := PrimCons(symexternal, tmp8038)
 
-tmp8033 := PrimCons(MakeNumber(1), tmp8032)
+tmp8040 := PrimCons(MakeNumber(1), tmp8039)
 
-tmp8034 := PrimCons(symenable_1type_1theory, tmp8033)
+tmp8041 := PrimCons(symenable_1type_1theory, tmp8040)
 
-tmp8035 := PrimCons(MakeNumber(1), tmp8034)
+tmp8042 := PrimCons(MakeNumber(1), tmp8041)
 
-tmp8036 := PrimCons(symempty_2, tmp8035)
+tmp8043 := PrimCons(symempty_2, tmp8042)
 
-tmp8037 := PrimCons(MakeNumber(2), tmp8036)
+tmp8044 := PrimCons(MakeNumber(2), tmp8043)
 
-tmp8038 := PrimCons(symelement_2, tmp8037)
+tmp8045 := PrimCons(symelement_2, tmp8044)
 
-tmp8039 := PrimCons(MakeNumber(2), tmp8038)
+tmp8046 := PrimCons(MakeNumber(2), tmp8045)
 
-tmp8040 := PrimCons(symdo, tmp8039)
+tmp8047 := PrimCons(symdo, tmp8046)
 
-tmp8041 := PrimCons(MakeNumber(2), tmp8040)
+tmp8048 := PrimCons(MakeNumber(2), tmp8047)
 
-tmp8042 := PrimCons(symdifference, tmp8041)
+tmp8049 := PrimCons(symdifference, tmp8048)
 
-tmp8043 := PrimCons(MakeNumber(1), tmp8042)
+tmp8050 := PrimCons(MakeNumber(1), tmp8049)
 
-tmp8044 := PrimCons(symdestroy, tmp8043)
+tmp8051 := PrimCons(symdestroy, tmp8050)
 
-tmp8045 := PrimCons(MakeNumber(2), tmp8044)
+tmp8052 := PrimCons(MakeNumber(2), tmp8051)
 
-tmp8046 := PrimCons(symdeclare, tmp8045)
+tmp8053 := PrimCons(symdeclare, tmp8052)
 
-tmp8047 := PrimCons(MakeNumber(0), tmp8046)
+tmp8054 := PrimCons(MakeNumber(0), tmp8053)
 
-tmp8048 := PrimCons(symdatatypes, tmp8047)
+tmp8055 := PrimCons(symdatatypes, tmp8054)
 
-tmp8049 := PrimCons(MakeNumber(1), tmp8048)
+tmp8056 := PrimCons(MakeNumber(1), tmp8055)
 
-tmp8050 := PrimCons(symclose, tmp8049)
+tmp8057 := PrimCons(symclose, tmp8056)
 
-tmp8051 := PrimCons(MakeNumber(2), tmp8050)
+tmp8058 := PrimCons(MakeNumber(2), tmp8057)
 
-tmp8052 := PrimCons(symcn, tmp8051)
+tmp8059 := PrimCons(symcn, tmp8058)
 
-tmp8053 := PrimCons(MakeNumber(1), tmp8052)
+tmp8060 := PrimCons(MakeNumber(1), tmp8059)
 
-tmp8054 := PrimCons(symcons_2, tmp8053)
+tmp8061 := PrimCons(symcons_2, tmp8060)
 
-tmp8055 := PrimCons(MakeNumber(2), tmp8054)
+tmp8062 := PrimCons(MakeNumber(2), tmp8061)
 
-tmp8056 := PrimCons(symcons, tmp8055)
+tmp8063 := PrimCons(symcons, tmp8062)
 
-tmp8057 := PrimCons(MakeNumber(2), tmp8056)
+tmp8064 := PrimCons(MakeNumber(2), tmp8063)
 
-tmp8058 := PrimCons(symconcat, tmp8057)
+tmp8065 := PrimCons(symconcat, tmp8064)
 
-tmp8059 := PrimCons(MakeNumber(2), tmp8058)
+tmp8066 := PrimCons(MakeNumber(2), tmp8065)
 
-tmp8060 := PrimCons(symcompile, tmp8059)
+tmp8067 := PrimCons(symcompile, tmp8066)
 
-tmp8061 := PrimCons(MakeNumber(1), tmp8060)
+tmp8068 := PrimCons(MakeNumber(1), tmp8067)
 
-tmp8062 := PrimCons(symcd, tmp8061)
+tmp8069 := PrimCons(symcd, tmp8068)
 
-tmp8063 := PrimCons(MakeNumber(5), tmp8062)
+tmp8070 := PrimCons(MakeNumber(5), tmp8069)
 
-tmp8064 := PrimCons(symcall, tmp8063)
+tmp8071 := PrimCons(symcall, tmp8070)
 
-tmp8065 := PrimCons(MakeNumber(6), tmp8064)
+tmp8072 := PrimCons(MakeNumber(6), tmp8071)
 
-tmp8066 := PrimCons(symbind, tmp8065)
+tmp8073 := PrimCons(symbind, tmp8072)
 
-tmp8067 := PrimCons(MakeNumber(1), tmp8066)
+tmp8074 := PrimCons(MakeNumber(1), tmp8073)
 
-tmp8068 := PrimCons(symbound_2, tmp8067)
+tmp8075 := PrimCons(symbound_2, tmp8074)
 
-tmp8069 := PrimCons(MakeNumber(1), tmp8068)
+tmp8076 := PrimCons(MakeNumber(1), tmp8075)
 
-tmp8070 := PrimCons(symbootstrap, tmp8069)
+tmp8077 := PrimCons(symbootstrap, tmp8076)
 
-tmp8071 := PrimCons(MakeNumber(1), tmp8070)
+tmp8078 := PrimCons(MakeNumber(1), tmp8077)
 
-tmp8072 := PrimCons(symboolean_2, tmp8071)
+tmp8079 := PrimCons(symboolean_2, tmp8078)
 
-tmp8073 := PrimCons(MakeNumber(1), tmp8072)
+tmp8080 := PrimCons(MakeNumber(1), tmp8079)
 
-tmp8074 := PrimCons(symatom_2, tmp8073)
+tmp8081 := PrimCons(symatom_2, tmp8080)
 
-tmp8075 := PrimCons(MakeNumber(2), tmp8074)
+tmp8082 := PrimCons(MakeNumber(2), tmp8081)
 
-tmp8076 := PrimCons(symassoc, tmp8075)
+tmp8083 := PrimCons(symassoc, tmp8082)
 
-tmp8077 := PrimCons(MakeNumber(1), tmp8076)
+tmp8084 := PrimCons(MakeNumber(1), tmp8083)
 
-tmp8078 := PrimCons(symarity, tmp8077)
+tmp8085 := PrimCons(symarity, tmp8084)
 
-tmp8079 := PrimCons(MakeNumber(2), tmp8078)
+tmp8086 := PrimCons(MakeNumber(2), tmp8085)
 
-tmp8080 := PrimCons(symappend, tmp8079)
+tmp8087 := PrimCons(symappend, tmp8086)
 
-tmp8081 := PrimCons(MakeNumber(2), tmp8080)
+tmp8088 := PrimCons(MakeNumber(2), tmp8087)
 
-tmp8082 := PrimCons(symand, tmp8081)
+tmp8089 := PrimCons(symand, tmp8088)
 
-tmp8083 := PrimCons(MakeNumber(2), tmp8082)
+tmp8090 := PrimCons(MakeNumber(2), tmp8089)
 
-tmp8084 := PrimCons(symadjoin, tmp8083)
+tmp8091 := PrimCons(symadjoin, tmp8090)
 
-tmp8085 := PrimCons(MakeNumber(3), tmp8084)
+tmp8092 := PrimCons(MakeNumber(3), tmp8091)
 
-tmp8086 := PrimCons(symaddress_1_6, tmp8085)
+tmp8093 := PrimCons(symaddress_1_6, tmp8092)
 
-tmp8087 := PrimCons(MakeNumber(1), tmp8086)
+tmp8094 := PrimCons(MakeNumber(1), tmp8093)
 
-tmp8088 := PrimCons(symabsvector, tmp8087)
+tmp8095 := PrimCons(symabsvector, tmp8094)
 
-tmp8089 := PrimCons(MakeNumber(1), tmp8088)
+tmp8096 := PrimCons(MakeNumber(1), tmp8095)
 
-tmp8090 := PrimCons(symabsvector_2, tmp8089)
+tmp8097 := PrimCons(symabsvector_2, tmp8096)
 
-tmp8091 := PrimCons(MakeNumber(0), tmp8090)
+tmp8098 := PrimCons(MakeNumber(0), tmp8097)
 
-tmp8092 := PrimCons(symabort, tmp8091)
+tmp8099 := PrimCons(symabort, tmp8098)
 
-tmp8093 := Call(__e, PrimFunc(symshen_4initialise_1arity_1table), tmp8092)
+tmp8100 := Call(__e, PrimFunc(symshen_4initialise_1arity_1table), tmp8099)
 
 
-_ = tmp8093
+_ = tmp8100
 
-tmp8094 := MakeNative(func(__e *ControlFlow) {
-V5793 := __e.Get(1)
-_ = V5793
-tmp8095 := MakeNative(func(__e *ControlFlow) {
-W5794 := __e.Get(1)
-_ = W5794
-tmp8096 := MakeNative(func(__e *ControlFlow) {
-W5795 := __e.Get(1)
-_ = W5795
-__e.Return(V5793)
-return
-}, 1)
-
-tmp8097 := Call(__e, PrimFunc(symadjoin), V5793, W5794)
-
-
-tmp8098 := PrimValue(sym_dproperty_1vector_d)
-
-tmp8099 := Call(__e, PrimFunc(symput), symshen, symshen_4external_1symbols, tmp8097, tmp8098)
-
-
-__e.TailApply(tmp8096, tmp8099)
-return
-
-
-}, 1)
-
-tmp8100 := PrimValue(sym_dproperty_1vector_d)
-
-tmp8101 := Call(__e, PrimFunc(symget), symshen, symshen_4external_1symbols, tmp8100)
-
-
-__e.TailApply(tmp8095, tmp8101)
-return
-
-
-}, 1)
-
-tmp8102 := Call(__e, ns2_1set, symsystemf, tmp8094)
-
-
-_ = tmp8102
-
-tmp8103 := MakeNative(func(__e *ControlFlow) {
-V5796 := __e.Get(1)
-_ = V5796
-V5797 := __e.Get(2)
+tmp8101 := MakeNative(func(__e *ControlFlow) {
+V5797 := __e.Get(1)
 _ = V5797
-tmp8105 := Call(__e, PrimFunc(symelement_2), V5796, V5797)
-
-
-if True == tmp8105 {
+tmp8102 := MakeNative(func(__e *ControlFlow) {
+W5798 := __e.Get(1)
+_ = W5798
+tmp8103 := MakeNative(func(__e *ControlFlow) {
+W5799 := __e.Get(1)
+_ = W5799
 __e.Return(V5797)
 return
+}, 1)
+
+tmp8104 := Call(__e, PrimFunc(symadjoin), V5797, W5798)
+
+
+tmp8105 := PrimValue(sym_dproperty_1vector_d)
+
+tmp8106 := Call(__e, PrimFunc(symput), symshen, symshen_4external_1symbols, tmp8104, tmp8105)
+
+
+__e.TailApply(tmp8103, tmp8106)
+return
+
+
+}, 1)
+
+tmp8107 := PrimValue(sym_dproperty_1vector_d)
+
+tmp8108 := Call(__e, PrimFunc(symget), symshen, symshen_4external_1symbols, tmp8107)
+
+
+__e.TailApply(tmp8102, tmp8108)
+return
+
+
+}, 1)
+
+tmp8109 := Call(__e, ns2_1set, symsystemf, tmp8101)
+
+
+_ = tmp8109
+
+tmp8110 := MakeNative(func(__e *ControlFlow) {
+V5800 := __e.Get(1)
+_ = V5800
+V5801 := __e.Get(2)
+_ = V5801
+tmp8112 := Call(__e, PrimFunc(symelement_2), V5800, V5801)
+
+
+if True == tmp8112 {
+__e.Return(V5801)
+return
 } else {
-__e.Return(PrimCons(V5796, V5797))
+__e.Return(PrimCons(V5800, V5801))
 return
 }
 
 
 }, 2)
 
-tmp8106 := Call(__e, ns2_1set, symadjoin, tmp8103)
+tmp8113 := Call(__e, ns2_1set, symadjoin, tmp8110)
 
 
-_ = tmp8106
+_ = tmp8113
 
-tmp8107 := PrimIntern(MakeString(":"))
+tmp8114 := PrimIntern(MakeString(":"))
 
-tmp8108 := PrimIntern(MakeString(";"))
+tmp8115 := PrimIntern(MakeString(";"))
 
-tmp8109 := PrimIntern(MakeString(":="))
+tmp8116 := PrimIntern(MakeString(":="))
 
-tmp8110 := PrimIntern(MakeString(","))
+tmp8117 := PrimIntern(MakeString(","))
 
-tmp8111 := Call(__e, PrimFunc(symvector), MakeNumber(0))
+tmp8118 := Call(__e, PrimFunc(symvector), MakeNumber(0))
 
 
-tmp8112 := PrimIntern(MakeString("bar!"))
+tmp8119 := PrimIntern(MakeString("bar!"))
 
-tmp8113 := PrimCons(symabort, Nil)
+tmp8120 := PrimCons(symabort, Nil)
 
-tmp8114 := PrimCons(symabsvector, tmp8113)
+tmp8121 := PrimCons(symabsvector, tmp8120)
 
-tmp8115 := PrimCons(symabsvector_2, tmp8114)
+tmp8122 := PrimCons(symabsvector_2, tmp8121)
 
-tmp8116 := PrimCons(symaddress_1_6, tmp8115)
+tmp8123 := PrimCons(symaddress_1_6, tmp8122)
 
-tmp8117 := PrimCons(sym_5_1address, tmp8116)
+tmp8124 := PrimCons(sym_5_1address, tmp8123)
 
-tmp8118 := PrimCons(symadjoin, tmp8117)
+tmp8125 := PrimCons(symadjoin, tmp8124)
 
-tmp8119 := PrimCons(symand, tmp8118)
+tmp8126 := PrimCons(symand, tmp8125)
 
-tmp8120 := PrimCons(symappend, tmp8119)
+tmp8127 := PrimCons(symappend, tmp8126)
 
-tmp8121 := PrimCons(symarity, tmp8120)
+tmp8128 := PrimCons(symarity, tmp8127)
 
-tmp8122 := PrimCons(symassoc, tmp8121)
+tmp8129 := PrimCons(symassoc, tmp8128)
 
-tmp8123 := PrimCons(symassertz, tmp8122)
+tmp8130 := PrimCons(symassertz, tmp8129)
 
-tmp8124 := PrimCons(symasserta, tmp8123)
+tmp8131 := PrimCons(symasserta, tmp8130)
 
-tmp8125 := PrimCons(symatom_2, tmp8124)
+tmp8132 := PrimCons(symatom_2, tmp8131)
 
-tmp8126 := PrimCons(symstep_2, tmp8125)
+tmp8133 := PrimCons(symstep_2, tmp8132)
 
-tmp8127 := PrimCons(symspy_2, tmp8126)
+tmp8134 := PrimCons(symspy_2, tmp8133)
 
-tmp8128 := PrimCons(tmp8112, tmp8127)
+tmp8135 := PrimCons(tmp8119, tmp8134)
 
-tmp8129 := PrimCons(symbootstrap, tmp8128)
+tmp8136 := PrimCons(symbootstrap, tmp8135)
 
-tmp8130 := PrimCons(symboolean, tmp8129)
+tmp8137 := PrimCons(symboolean, tmp8136)
 
-tmp8131 := PrimCons(symboolean_2, tmp8130)
+tmp8138 := PrimCons(symboolean_2, tmp8137)
 
-tmp8132 := PrimCons(symbound_2, tmp8131)
+tmp8139 := PrimCons(symbound_2, tmp8138)
 
-tmp8133 := PrimCons(symbind, tmp8132)
+tmp8140 := PrimCons(symbind, tmp8139)
 
-tmp8134 := PrimCons(symclose, tmp8133)
+tmp8141 := PrimCons(symclose, tmp8140)
 
-tmp8135 := PrimCons(symcall, tmp8134)
+tmp8142 := PrimCons(symcall, tmp8141)
 
-tmp8136 := PrimCons(symcases, tmp8135)
+tmp8143 := PrimCons(symcases, tmp8142)
 
-tmp8137 := PrimCons(symcd, tmp8136)
+tmp8144 := PrimCons(symcd, tmp8143)
 
-tmp8138 := PrimCons(symcompile, tmp8137)
+tmp8145 := PrimCons(symcompile, tmp8144)
 
-tmp8139 := PrimCons(symconcat, tmp8138)
+tmp8146 := PrimCons(symconcat, tmp8145)
 
-tmp8140 := PrimCons(symcond, tmp8139)
+tmp8147 := PrimCons(symcond, tmp8146)
 
-tmp8141 := PrimCons(symcons, tmp8140)
+tmp8148 := PrimCons(symcons, tmp8147)
 
-tmp8142 := PrimCons(symcons_2, tmp8141)
+tmp8149 := PrimCons(symcons_2, tmp8148)
 
-tmp8143 := PrimCons(symcn, tmp8142)
+tmp8150 := PrimCons(symcn, tmp8149)
 
-tmp8144 := PrimCons(symdatatypes, tmp8143)
+tmp8151 := PrimCons(symdatatypes, tmp8150)
 
-tmp8145 := PrimCons(symdatatype, tmp8144)
+tmp8152 := PrimCons(symdatatype, tmp8151)
 
-tmp8146 := PrimCons(symdeclare, tmp8145)
+tmp8153 := PrimCons(symdeclare, tmp8152)
 
-tmp8147 := PrimCons(symdefprolog, tmp8146)
+tmp8154 := PrimCons(symdefprolog, tmp8153)
 
-tmp8148 := PrimCons(symdefcc, tmp8147)
+tmp8155 := PrimCons(symdefcc, tmp8154)
 
-tmp8149 := PrimCons(symdefmacro, tmp8148)
+tmp8156 := PrimCons(symdefmacro, tmp8155)
 
-tmp8150 := PrimCons(symdefine, tmp8149)
+tmp8157 := PrimCons(symdefine, tmp8156)
 
-tmp8151 := PrimCons(symdefun, tmp8150)
+tmp8158 := PrimCons(symdefun, tmp8157)
 
-tmp8152 := PrimCons(symdestroy, tmp8151)
+tmp8159 := PrimCons(symdestroy, tmp8158)
 
-tmp8153 := PrimCons(symdifference, tmp8152)
+tmp8160 := PrimCons(symdifference, tmp8159)
 
-tmp8154 := PrimCons(symdo, tmp8153)
+tmp8161 := PrimCons(symdo, tmp8160)
 
-tmp8155 := PrimCons(symelement_2, tmp8154)
+tmp8162 := PrimCons(symelement_2, tmp8161)
 
-tmp8156 := PrimCons(symempty_2, tmp8155)
+tmp8163 := PrimCons(symempty_2, tmp8162)
 
-tmp8157 := PrimCons(symerror, tmp8156)
+tmp8164 := PrimCons(symerror, tmp8163)
 
-tmp8158 := PrimCons(symerror_1to_1string, tmp8157)
+tmp8165 := PrimCons(symerror_1to_1string, tmp8164)
 
-tmp8159 := PrimCons(symeval, tmp8158)
+tmp8166 := PrimCons(symeval, tmp8165)
 
-tmp8160 := PrimCons(symeval_1kl, tmp8159)
+tmp8167 := PrimCons(symeval_1kl, tmp8166)
 
-tmp8161 := PrimCons(symexception, tmp8160)
+tmp8168 := PrimCons(symexception, tmp8167)
 
-tmp8162 := PrimCons(symexternal, tmp8161)
+tmp8169 := PrimCons(symexternal, tmp8168)
 
-tmp8163 := PrimCons(symexplode, tmp8162)
+tmp8170 := PrimCons(symexplode, tmp8169)
 
-tmp8164 := PrimCons(symenable_1type_1theory, tmp8163)
+tmp8171 := PrimCons(symenable_1type_1theory, tmp8170)
 
-tmp8165 := PrimCons(False, tmp8164)
+tmp8172 := PrimCons(False, tmp8171)
 
-tmp8166 := PrimCons(symfindall, tmp8165)
+tmp8173 := PrimCons(symfindall, tmp8172)
 
-tmp8167 := PrimCons(symfactorise_2, tmp8166)
+tmp8174 := PrimCons(symfactorise_2, tmp8173)
 
-tmp8168 := PrimCons(symfactorise, tmp8167)
+tmp8175 := PrimCons(symfactorise, tmp8174)
 
-tmp8169 := PrimCons(symfail_1if, tmp8168)
+tmp8176 := PrimCons(symfail_1if, tmp8175)
 
-tmp8170 := PrimCons(symfail, tmp8169)
+tmp8177 := PrimCons(symfail, tmp8176)
 
-tmp8171 := PrimCons(symfile, tmp8170)
+tmp8178 := PrimCons(symfile, tmp8177)
 
-tmp8172 := PrimCons(symfix, tmp8171)
+tmp8179 := PrimCons(symfix, tmp8178)
 
-tmp8173 := PrimCons(symforeign, tmp8172)
+tmp8180 := PrimCons(symforeign, tmp8179)
 
-tmp8174 := PrimCons(symfork, tmp8173)
+tmp8181 := PrimCons(symfork, tmp8180)
 
-tmp8175 := PrimCons(symfresh, tmp8174)
+tmp8182 := PrimCons(symfresh, tmp8181)
 
-tmp8176 := PrimCons(symfreeze, tmp8175)
+tmp8183 := PrimCons(symfreeze, tmp8182)
 
-tmp8177 := PrimCons(symfst, tmp8176)
+tmp8184 := PrimCons(symfst, tmp8183)
 
-tmp8178 := PrimCons(symfunction, tmp8177)
+tmp8185 := PrimCons(symfunction, tmp8184)
 
-tmp8179 := PrimCons(symfn, tmp8178)
+tmp8186 := PrimCons(symfn, tmp8185)
 
-tmp8180 := PrimCons(symgensym, tmp8179)
+tmp8187 := PrimCons(symgensym, tmp8186)
 
-tmp8181 := PrimCons(symget_1time, tmp8180)
+tmp8188 := PrimCons(symget_1time, tmp8187)
 
-tmp8182 := PrimCons(symget, tmp8181)
+tmp8189 := PrimCons(symget, tmp8188)
 
-tmp8183 := PrimCons(symhash, tmp8182)
+tmp8190 := PrimCons(symhash, tmp8189)
 
-tmp8184 := PrimCons(symhdstr, tmp8183)
+tmp8191 := PrimCons(symhdstr, tmp8190)
 
-tmp8185 := PrimCons(symhdv, tmp8184)
+tmp8192 := PrimCons(symhdv, tmp8191)
 
-tmp8186 := PrimCons(symhd, tmp8185)
+tmp8193 := PrimCons(symhd, tmp8192)
 
-tmp8187 := PrimCons(symhead, tmp8186)
+tmp8194 := PrimCons(symhead, tmp8193)
 
-tmp8188 := PrimCons(symhush_2, tmp8187)
+tmp8195 := PrimCons(symhush_2, tmp8194)
 
-tmp8189 := PrimCons(symhush_2, tmp8188)
+tmp8196 := PrimCons(symhush_2, tmp8195)
 
-tmp8190 := PrimCons(symif, tmp8189)
+tmp8197 := PrimCons(symif, tmp8196)
 
-tmp8191 := PrimCons(symimplementation, tmp8190)
+tmp8198 := PrimCons(symimplementation, tmp8197)
 
-tmp8192 := PrimCons(syminternal, tmp8191)
+tmp8199 := PrimCons(syminternal, tmp8198)
 
-tmp8193 := PrimCons(symin_1package, tmp8192)
+tmp8200 := PrimCons(symin_1package, tmp8199)
 
-tmp8194 := PrimCons(symin, tmp8193)
+tmp8201 := PrimCons(symin, tmp8200)
 
-tmp8195 := PrimCons(symis_b, tmp8194)
+tmp8202 := PrimCons(symis_b, tmp8201)
 
-tmp8196 := PrimCons(symis, tmp8195)
+tmp8203 := PrimCons(symis, tmp8202)
 
-tmp8197 := PrimCons(symit, tmp8196)
+tmp8204 := PrimCons(symit, tmp8203)
 
-tmp8198 := PrimCons(syminclude_1all_1but, tmp8197)
+tmp8205 := PrimCons(syminclude_1all_1but, tmp8204)
 
-tmp8199 := PrimCons(syminclude, tmp8198)
+tmp8206 := PrimCons(syminclude, tmp8205)
 
-tmp8200 := PrimCons(symincluded, tmp8199)
+tmp8207 := PrimCons(symincluded, tmp8206)
 
-tmp8201 := PrimCons(syminput_7, tmp8200)
+tmp8208 := PrimCons(syminput_7, tmp8207)
 
-tmp8202 := PrimCons(syminput, tmp8201)
+tmp8209 := PrimCons(syminput, tmp8208)
 
-tmp8203 := PrimCons(syminteger_2, tmp8202)
+tmp8210 := PrimCons(syminteger_2, tmp8209)
 
-tmp8204 := PrimCons(symintern, tmp8203)
+tmp8211 := PrimCons(symintern, tmp8210)
 
-tmp8205 := PrimCons(syminferences, tmp8204)
+tmp8212 := PrimCons(syminferences, tmp8211)
 
-tmp8206 := PrimCons(symintersection, tmp8205)
+tmp8213 := PrimCons(symintersection, tmp8212)
 
-tmp8207 := PrimCons(symis, tmp8206)
+tmp8214 := PrimCons(symis, tmp8213)
 
-tmp8208 := PrimCons(symlanguage, tmp8207)
+tmp8215 := PrimCons(symlanguage, tmp8214)
 
-tmp8209 := PrimCons(symlambda, tmp8208)
+tmp8216 := PrimCons(symlambda, tmp8215)
 
-tmp8210 := PrimCons(symlazy, tmp8209)
+tmp8217 := PrimCons(symlazy, tmp8216)
 
-tmp8211 := PrimCons(symlet, tmp8210)
+tmp8218 := PrimCons(symlet, tmp8217)
 
-tmp8212 := PrimCons(symlength, tmp8211)
+tmp8219 := PrimCons(symlength, tmp8218)
 
-tmp8213 := PrimCons(symlimit, tmp8212)
+tmp8220 := PrimCons(symlimit, tmp8219)
 
-tmp8214 := PrimCons(symlineread, tmp8213)
+tmp8221 := PrimCons(symlineread, tmp8220)
 
-tmp8215 := PrimCons(symlist, tmp8214)
+tmp8222 := PrimCons(symlist, tmp8221)
 
-tmp8216 := PrimCons(symloaded, tmp8215)
+tmp8223 := PrimCons(symloaded, tmp8222)
 
-tmp8217 := PrimCons(symload, tmp8216)
+tmp8224 := PrimCons(symload, tmp8223)
 
-tmp8218 := PrimCons(symmake_1string, tmp8217)
+tmp8225 := PrimCons(symmake_1string, tmp8224)
 
-tmp8219 := PrimCons(symmap, tmp8218)
+tmp8226 := PrimCons(symmap, tmp8225)
 
-tmp8220 := PrimCons(symmapcan, tmp8219)
+tmp8227 := PrimCons(symmapcan, tmp8226)
 
-tmp8221 := PrimCons(symmaxinferences, tmp8220)
+tmp8228 := PrimCons(symmaxinferences, tmp8227)
 
-tmp8222 := PrimCons(symmacroexpand, tmp8221)
+tmp8229 := PrimCons(symmacroexpand, tmp8228)
 
-tmp8223 := PrimCons(symmode, tmp8222)
+tmp8230 := PrimCons(symmode, tmp8229)
 
-tmp8224 := PrimCons(symnl, tmp8223)
+tmp8231 := PrimCons(symnl, tmp8230)
 
-tmp8225 := PrimCons(symnot, tmp8224)
+tmp8232 := PrimCons(symnot, tmp8231)
 
-tmp8226 := PrimCons(symnth, tmp8225)
+tmp8233 := PrimCons(symnth, tmp8232)
 
-tmp8227 := PrimCons(symnull, tmp8226)
+tmp8234 := PrimCons(symnull, tmp8233)
 
-tmp8228 := PrimCons(symnumber, tmp8227)
+tmp8235 := PrimCons(symnumber, tmp8234)
 
-tmp8229 := PrimCons(symnumber_2, tmp8228)
+tmp8236 := PrimCons(symnumber_2, tmp8235)
 
-tmp8230 := PrimCons(symn_1_6string, tmp8229)
+tmp8237 := PrimCons(symn_1_6string, tmp8236)
 
-tmp8231 := PrimCons(symoccurs_2, tmp8230)
+tmp8238 := PrimCons(symoccurs_2, tmp8237)
 
-tmp8232 := PrimCons(symoccurs_1check, tmp8231)
+tmp8239 := PrimCons(symoccurs_1check, tmp8238)
 
-tmp8233 := PrimCons(symoccurrences, tmp8232)
+tmp8240 := PrimCons(symoccurrences, tmp8239)
 
-tmp8234 := PrimCons(symopen, tmp8233)
+tmp8241 := PrimCons(symopen, tmp8240)
 
-tmp8235 := PrimCons(symoptimise_2, tmp8234)
+tmp8242 := PrimCons(symoptimise_2, tmp8241)
 
-tmp8236 := PrimCons(symoptimise, tmp8235)
+tmp8243 := PrimCons(symoptimise, tmp8242)
 
-tmp8237 := PrimCons(symor, tmp8236)
+tmp8244 := PrimCons(symor, tmp8243)
 
-tmp8238 := PrimCons(symos, tmp8237)
+tmp8245 := PrimCons(symos, tmp8244)
 
-tmp8239 := PrimCons(symout, tmp8238)
+tmp8246 := PrimCons(symout, tmp8245)
 
-tmp8240 := PrimCons(symoutput, tmp8239)
+tmp8247 := PrimCons(symoutput, tmp8246)
 
-tmp8241 := PrimCons(sympackage, tmp8240)
+tmp8248 := PrimCons(sympackage, tmp8247)
 
-tmp8242 := PrimCons(symport, tmp8241)
+tmp8249 := PrimCons(symport, tmp8248)
 
-tmp8243 := PrimCons(symporters, tmp8242)
+tmp8250 := PrimCons(symporters, tmp8249)
 
-tmp8244 := PrimCons(sympos, tmp8243)
+tmp8251 := PrimCons(sympos, tmp8250)
 
-tmp8245 := PrimCons(sympr, tmp8244)
+tmp8252 := PrimCons(sympr, tmp8251)
 
-tmp8246 := PrimCons(symprint, tmp8245)
+tmp8253 := PrimCons(symprint, tmp8252)
 
-tmp8247 := PrimCons(symprolog_1memory, tmp8246)
+tmp8254 := PrimCons(symprolog_1memory, tmp8253)
 
-tmp8248 := PrimCons(symprofile, tmp8247)
+tmp8255 := PrimCons(symprofile, tmp8254)
 
-tmp8249 := PrimCons(symprofile_1results, tmp8248)
+tmp8256 := PrimCons(symprofile_1results, tmp8255)
 
-tmp8250 := PrimCons(symprotect, tmp8249)
+tmp8257 := PrimCons(symprotect, tmp8256)
 
-tmp8251 := PrimCons(symprolog_2, tmp8250)
+tmp8258 := PrimCons(symprolog_2, tmp8257)
 
-tmp8252 := PrimCons(symps, tmp8251)
+tmp8259 := PrimCons(symps, tmp8258)
 
-tmp8253 := PrimCons(sympreclude_1all_1but, tmp8252)
+tmp8260 := PrimCons(sympreclude_1all_1but, tmp8259)
 
-tmp8254 := PrimCons(sympreclude, tmp8253)
+tmp8261 := PrimCons(sympreclude, tmp8260)
 
-tmp8255 := PrimCons(symput, tmp8254)
+tmp8262 := PrimCons(symput, tmp8261)
 
-tmp8256 := PrimCons(sympackage_2, tmp8255)
+tmp8263 := PrimCons(sympackage_2, tmp8262)
 
-tmp8257 := PrimCons(symread_1from_1string_1unprocessed, tmp8256)
+tmp8264 := PrimCons(symread_1from_1string_1unprocessed, tmp8263)
 
-tmp8258 := PrimCons(symread_1from_1string, tmp8257)
+tmp8265 := PrimCons(symread_1from_1string, tmp8264)
 
-tmp8259 := PrimCons(symread_1byte, tmp8258)
+tmp8266 := PrimCons(symread_1byte, tmp8265)
 
-tmp8260 := PrimCons(symread_1file_1as_1string, tmp8259)
+tmp8267 := PrimCons(symread_1file_1as_1string, tmp8266)
 
-tmp8261 := PrimCons(symread_1file_1as_1bytelist, tmp8260)
+tmp8268 := PrimCons(symread_1file_1as_1bytelist, tmp8267)
 
-tmp8262 := PrimCons(symread_1file, tmp8261)
+tmp8269 := PrimCons(symread_1file, tmp8268)
 
-tmp8263 := PrimCons(symreceive, tmp8262)
+tmp8270 := PrimCons(symreceive, tmp8269)
 
-tmp8264 := PrimCons(symread, tmp8263)
+tmp8271 := PrimCons(symread, tmp8270)
 
-tmp8265 := PrimCons(symrelease, tmp8264)
+tmp8272 := PrimCons(symrelease, tmp8271)
 
-tmp8266 := PrimCons(symremove, tmp8265)
+tmp8273 := PrimCons(symremove, tmp8272)
 
-tmp8267 := PrimCons(symretract, tmp8266)
+tmp8274 := PrimCons(symretract, tmp8273)
 
-tmp8268 := PrimCons(symreverse, tmp8267)
+tmp8275 := PrimCons(symreverse, tmp8274)
 
-tmp8269 := PrimCons(symrun, tmp8268)
+tmp8276 := PrimCons(symrun, tmp8275)
 
-tmp8270 := PrimCons(symstr, tmp8269)
+tmp8277 := PrimCons(symstr, tmp8276)
 
-tmp8271 := PrimCons(symsave, tmp8270)
+tmp8278 := PrimCons(symsave, tmp8277)
 
-tmp8272 := PrimCons(symset, tmp8271)
+tmp8279 := PrimCons(symset, tmp8278)
 
-tmp8273 := PrimCons(symsimple_1error, tmp8272)
+tmp8280 := PrimCons(symsimple_1error, tmp8279)
 
-tmp8274 := PrimCons(symsnd, tmp8273)
+tmp8281 := PrimCons(symsnd, tmp8280)
 
-tmp8275 := PrimCons(symspecialise, tmp8274)
+tmp8282 := PrimCons(symspecialise, tmp8281)
 
-tmp8276 := PrimCons(symspy, tmp8275)
+tmp8283 := PrimCons(symspy, tmp8282)
 
-tmp8277 := PrimCons(symstep, tmp8276)
+tmp8284 := PrimCons(symstep, tmp8283)
 
-tmp8278 := PrimCons(symstoutput, tmp8277)
+tmp8285 := PrimCons(symstoutput, tmp8284)
 
-tmp8279 := PrimCons(symstinput, tmp8278)
+tmp8286 := PrimCons(symstinput, tmp8285)
 
-tmp8280 := PrimCons(symstring, tmp8279)
+tmp8287 := PrimCons(symstring, tmp8286)
 
-tmp8281 := PrimCons(symstream, tmp8280)
+tmp8288 := PrimCons(symstream, tmp8287)
 
-tmp8282 := PrimCons(symstring_1_6n, tmp8281)
+tmp8289 := PrimCons(symstring_1_6n, tmp8288)
 
-tmp8283 := PrimCons(symstring_2, tmp8282)
+tmp8290 := PrimCons(symstring_2, tmp8289)
 
-tmp8284 := PrimCons(symsubst, tmp8283)
+tmp8291 := PrimCons(symsubst, tmp8290)
 
-tmp8285 := PrimCons(symsum, tmp8284)
+tmp8292 := PrimCons(symsum, tmp8291)
 
-tmp8286 := PrimCons(symstring_1_6symbol, tmp8285)
+tmp8293 := PrimCons(symstring_1_6symbol, tmp8292)
 
-tmp8287 := PrimCons(symsymbol_2, tmp8286)
+tmp8294 := PrimCons(symsymbol_2, tmp8293)
 
-tmp8288 := PrimCons(symsymbol, tmp8287)
+tmp8295 := PrimCons(symsymbol, tmp8294)
 
-tmp8289 := PrimCons(symsystem_1S_2, tmp8288)
+tmp8296 := PrimCons(symsystem_1S_2, tmp8295)
 
-tmp8290 := PrimCons(symsynonyms, tmp8289)
+tmp8297 := PrimCons(symsynonyms, tmp8296)
 
-tmp8291 := PrimCons(symsystemf, tmp8290)
+tmp8298 := PrimCons(symsystemf, tmp8297)
 
-tmp8292 := PrimCons(symtail, tmp8291)
+tmp8299 := PrimCons(symtail, tmp8298)
 
-tmp8293 := PrimCons(symtlv, tmp8292)
+tmp8300 := PrimCons(symtlv, tmp8299)
 
-tmp8294 := PrimCons(symtlstr, tmp8293)
+tmp8301 := PrimCons(symtlstr, tmp8300)
 
-tmp8295 := PrimCons(symtl, tmp8294)
+tmp8302 := PrimCons(symtl, tmp8301)
 
-tmp8296 := PrimCons(symtc, tmp8295)
+tmp8303 := PrimCons(symtc, tmp8302)
 
-tmp8297 := PrimCons(symtc_2, tmp8296)
+tmp8304 := PrimCons(symtc_2, tmp8303)
 
-tmp8298 := PrimCons(symthaw, tmp8297)
+tmp8305 := PrimCons(symthaw, tmp8304)
 
-tmp8299 := PrimCons(symtime, tmp8298)
+tmp8306 := PrimCons(symtime, tmp8305)
 
-tmp8300 := PrimCons(symtrack, tmp8299)
+tmp8307 := PrimCons(symtrack, tmp8306)
 
-tmp8301 := PrimCons(symtracked, tmp8300)
+tmp8308 := PrimCons(symtracked, tmp8307)
 
-tmp8302 := PrimCons(symtrap_1error, tmp8301)
+tmp8309 := PrimCons(symtrap_1error, tmp8308)
 
-tmp8303 := PrimCons(True, tmp8302)
+tmp8310 := PrimCons(True, tmp8309)
 
-tmp8304 := PrimCons(symtuple_2, tmp8303)
+tmp8311 := PrimCons(symtuple_2, tmp8310)
 
-tmp8305 := PrimCons(symtype, tmp8304)
+tmp8312 := PrimCons(symtype, tmp8311)
 
-tmp8306 := PrimCons(symreturn, tmp8305)
+tmp8313 := PrimCons(symreturn, tmp8312)
 
-tmp8307 := PrimCons(symundefmacro, tmp8306)
+tmp8314 := PrimCons(symundefmacro, tmp8313)
 
-tmp8308 := PrimCons(symunprofile, tmp8307)
+tmp8315 := PrimCons(symunprofile, tmp8314)
 
-tmp8309 := PrimCons(symunput, tmp8308)
+tmp8316 := PrimCons(symunput, tmp8315)
 
-tmp8310 := PrimCons(symunion, tmp8309)
+tmp8317 := PrimCons(symunion, tmp8316)
 
-tmp8311 := PrimCons(symunix, tmp8310)
+tmp8318 := PrimCons(symunix, tmp8317)
 
-tmp8312 := PrimCons(symunit, tmp8311)
+tmp8319 := PrimCons(symunit, tmp8318)
 
-tmp8313 := PrimCons(symuntrack, tmp8312)
+tmp8320 := PrimCons(symuntrack, tmp8319)
 
-tmp8314 := PrimCons(symunspecialise, tmp8313)
+tmp8321 := PrimCons(symunspecialise, tmp8320)
 
-tmp8315 := PrimCons(symupdate_1lambda_1table, tmp8314)
+tmp8322 := PrimCons(symupdate_1lambda_1table, tmp8321)
 
-tmp8316 := PrimCons(symu_b, tmp8315)
+tmp8323 := PrimCons(symu_b, tmp8322)
 
-tmp8317 := PrimCons(symuserdefs, tmp8316)
+tmp8324 := PrimCons(symuserdefs, tmp8323)
 
-tmp8318 := PrimCons(symvector_2, tmp8317)
+tmp8325 := PrimCons(symvector_2, tmp8324)
 
-tmp8319 := PrimCons(symvector, tmp8318)
+tmp8326 := PrimCons(symvector, tmp8325)
 
-tmp8320 := PrimCons(sym_5_1vector, tmp8319)
+tmp8327 := PrimCons(sym_5_1vector, tmp8326)
 
-tmp8321 := PrimCons(symvector_1_6, tmp8320)
+tmp8328 := PrimCons(symvector_1_6, tmp8327)
 
-tmp8322 := PrimCons(symvalue, tmp8321)
+tmp8329 := PrimCons(symvalue, tmp8328)
 
-tmp8323 := PrimCons(symvar_2, tmp8322)
+tmp8330 := PrimCons(symvar_2, tmp8329)
 
-tmp8324 := PrimCons(symvariable_2, tmp8323)
+tmp8331 := PrimCons(symvariable_2, tmp8330)
 
-tmp8325 := PrimCons(symverified, tmp8324)
+tmp8332 := PrimCons(symverified, tmp8331)
 
-tmp8326 := PrimCons(symversion, tmp8325)
+tmp8333 := PrimCons(symversion, tmp8332)
 
-tmp8327 := PrimCons(symwhen, tmp8326)
+tmp8334 := PrimCons(symwhen, tmp8333)
 
-tmp8328 := PrimCons(symwhere, tmp8327)
+tmp8335 := PrimCons(symwhere, tmp8334)
 
-tmp8329 := PrimCons(symwrite_1byte, tmp8328)
+tmp8336 := PrimCons(symwrite_1byte, tmp8335)
 
-tmp8330 := PrimCons(symwrite_1to_1file, tmp8329)
+tmp8337 := PrimCons(symwrite_1to_1file, tmp8336)
 
-tmp8331 := PrimCons(symy_1or_1n_2, tmp8330)
+tmp8338 := PrimCons(symy_1or_1n_2, tmp8337)
 
-tmp8332 := PrimCons(tmp8111, tmp8331)
+tmp8339 := PrimCons(tmp8118, tmp8338)
 
-tmp8333 := PrimCons(sym_6_6, tmp8332)
+tmp8340 := PrimCons(sym_6_6, tmp8339)
 
-tmp8334 := PrimCons(sym_5, tmp8333)
+tmp8341 := PrimCons(sym_5, tmp8340)
 
-tmp8335 := PrimCons(sym_5_a, tmp8334)
+tmp8342 := PrimCons(sym_5_a, tmp8341)
 
-tmp8336 := PrimCons(sym_7, tmp8335)
+tmp8343 := PrimCons(sym_7, tmp8342)
 
-tmp8337 := PrimCons(sym_d, tmp8336)
+tmp8344 := PrimCons(sym_d, tmp8343)
 
-tmp8338 := PrimCons(sym_c, tmp8337)
+tmp8345 := PrimCons(sym_c, tmp8344)
 
-tmp8339 := PrimCons(sym_1, tmp8338)
+tmp8346 := PrimCons(sym_1, tmp8345)
 
-tmp8340 := PrimCons(sym_3, tmp8339)
+tmp8347 := PrimCons(sym_3, tmp8346)
 
-tmp8341 := PrimCons(sym_5end_6, tmp8340)
+tmp8348 := PrimCons(sym_5end_6, tmp8347)
 
-tmp8342 := PrimCons(sym_5_b_6, tmp8341)
+tmp8349 := PrimCons(sym_5_b_6, tmp8348)
 
-tmp8343 := PrimCons(sym_c_4, tmp8342)
+tmp8350 := PrimCons(sym_c_4, tmp8349)
 
-tmp8344 := PrimCons(sym_a_a_6, tmp8343)
+tmp8351 := PrimCons(sym_a_a_6, tmp8350)
 
-tmp8345 := PrimCons(sym_6, tmp8344)
+tmp8352 := PrimCons(sym_6, tmp8351)
 
-tmp8346 := PrimCons(sym_6_a, tmp8345)
+tmp8353 := PrimCons(sym_6_a, tmp8352)
 
-tmp8347 := PrimCons(sym_a, tmp8346)
+tmp8354 := PrimCons(sym_a, tmp8353)
 
-tmp8348 := PrimCons(sym_a_a, tmp8347)
+tmp8355 := PrimCons(sym_a_a, tmp8354)
 
-tmp8349 := PrimCons(sym_5e_6, tmp8348)
+tmp8356 := PrimCons(sym_5e_6, tmp8355)
 
-tmp8350 := PrimCons(sym_1_6, tmp8349)
+tmp8357 := PrimCons(sym_1_6, tmp8356)
 
-tmp8351 := PrimCons(sym_5_1, tmp8350)
+tmp8358 := PrimCons(sym_5_1, tmp8357)
 
-tmp8352 := PrimCons(sym_dhush_d, tmp8351)
+tmp8359 := PrimCons(sym_dhush_d, tmp8358)
 
-tmp8353 := PrimCons(sym_dporters_d, tmp8352)
+tmp8360 := PrimCons(sym_dporters_d, tmp8359)
 
-tmp8354 := PrimCons(sym_dport_d, tmp8353)
+tmp8361 := PrimCons(sym_dport_d, tmp8360)
 
-tmp8355 := PrimCons(sym_8s, tmp8354)
+tmp8362 := PrimCons(sym_8s, tmp8361)
 
-tmp8356 := PrimCons(sym_8p, tmp8355)
+tmp8363 := PrimCons(sym_8p, tmp8362)
 
-tmp8357 := PrimCons(sym_8v, tmp8356)
+tmp8364 := PrimCons(sym_8v, tmp8363)
 
-tmp8358 := PrimCons(sym_dproperty_1vector_d, tmp8357)
+tmp8365 := PrimCons(sym_dproperty_1vector_d, tmp8364)
 
-tmp8359 := PrimCons(sym_drelease_d, tmp8358)
+tmp8366 := PrimCons(sym_drelease_d, tmp8365)
 
-tmp8360 := PrimCons(sym_dos_d, tmp8359)
+tmp8367 := PrimCons(sym_dos_d, tmp8366)
 
-tmp8361 := PrimCons(sym_dmacros_d, tmp8360)
+tmp8368 := PrimCons(sym_dmacros_d, tmp8367)
 
-tmp8362 := PrimCons(sym_dmaximum_1print_1sequence_1size_d, tmp8361)
+tmp8369 := PrimCons(sym_dmaximum_1print_1sequence_1size_d, tmp8368)
 
-tmp8363 := PrimCons(sym_dversion_d, tmp8362)
+tmp8370 := PrimCons(sym_dversion_d, tmp8369)
 
-tmp8364 := PrimCons(sym_dhome_1directory_d, tmp8363)
+tmp8371 := PrimCons(sym_dhome_1directory_d, tmp8370)
 
-tmp8365 := PrimCons(sym_dstoutput_d, tmp8364)
+tmp8372 := PrimCons(sym_dstoutput_d, tmp8371)
 
-tmp8366 := PrimCons(sym_dstinput_d, tmp8365)
+tmp8373 := PrimCons(sym_dstinput_d, tmp8372)
 
-tmp8367 := PrimCons(sym_dimplementation_d, tmp8366)
+tmp8374 := PrimCons(sym_dimplementation_d, tmp8373)
 
-tmp8368 := PrimCons(sym_dlanguage_d, tmp8367)
+tmp8375 := PrimCons(sym_dlanguage_d, tmp8374)
 
-tmp8369 := PrimCons(sym__, tmp8368)
+tmp8376 := PrimCons(sym__, tmp8375)
 
-tmp8370 := PrimCons(tmp8110, tmp8369)
+tmp8377 := PrimCons(tmp8117, tmp8376)
 
-tmp8371 := PrimCons(tmp8109, tmp8370)
+tmp8378 := PrimCons(tmp8116, tmp8377)
 
-tmp8372 := PrimCons(tmp8108, tmp8371)
+tmp8379 := PrimCons(tmp8115, tmp8378)
 
-tmp8373 := PrimCons(tmp8107, tmp8372)
+tmp8380 := PrimCons(tmp8114, tmp8379)
 
-tmp8374 := PrimCons(sym_e_e, tmp8373)
+tmp8381 := PrimCons(sym_e_e, tmp8380)
 
-tmp8375 := PrimCons(sym_5_1_1, tmp8374)
+tmp8382 := PrimCons(sym_5_1_1, tmp8381)
 
-tmp8376 := PrimCons(sym_1_1_6, tmp8375)
+tmp8383 := PrimCons(sym_1_1_6, tmp8382)
 
-tmp8377 := PrimCons(sym_i, tmp8376)
+tmp8384 := PrimCons(sym_i, tmp8383)
 
-tmp8378 := PrimCons(sym_j, tmp8377)
+tmp8385 := PrimCons(sym_j, tmp8384)
 
-tmp8379 := PrimCons(sym_b, tmp8378)
+tmp8386 := PrimCons(sym_b, tmp8385)
 
-tmp8380 := PrimValue(sym_dproperty_1vector_d)
+tmp8387 := PrimValue(sym_dproperty_1vector_d)
 
-tmp8381 := Call(__e, PrimFunc(symput), symshen, symshen_4external_1symbols, tmp8379, tmp8380)
+tmp8388 := Call(__e, PrimFunc(symput), symshen, symshen_4external_1symbols, tmp8386, tmp8387)
 
 
-_ = tmp8381
+_ = tmp8388
 
-tmp8382 := MakeNative(func(__e *ControlFlow) {
-V5798 := __e.Get(1)
-_ = V5798
-tmp8383 := MakeNative(func(__e *ControlFlow) {
-W5799 := __e.Get(1)
-_ = W5799
-tmp8391 := PrimEqual(W5799, MakeNumber(-1))
+tmp8389 := MakeNative(func(__e *ControlFlow) {
+V5802 := __e.Get(1)
+_ = V5802
+tmp8390 := MakeNative(func(__e *ControlFlow) {
+W5803 := __e.Get(1)
+_ = W5803
+tmp8398 := PrimEqual(W5803, MakeNumber(-1))
 
-var ifres8388 Obj
+var ifres8395 Obj
 
-if True == tmp8391 {
-ifres8388 = True
+if True == tmp8398 {
+ifres8395 = True
 
 
 } else {
-tmp8390 := PrimEqual(W5799, MakeNumber(0))
+tmp8397 := PrimEqual(W5803, MakeNumber(0))
 
-var ifres8389 Obj
+var ifres8396 Obj
 
-if True == tmp8390 {
-ifres8389 = True
+if True == tmp8397 {
+ifres8396 = True
 
 
 } else {
-ifres8389 = False
+ifres8396 = False
 
 
 }
 
-ifres8388 = ifres8389
+ifres8395 = ifres8396
 
 
 }
 
-if True == ifres8388 {
+if True == ifres8395 {
 __e.Return(Nil)
 return
 } else {
-tmp8384 := PrimCons(V5798, Nil)
+tmp8391 := PrimCons(V5802, Nil)
 
-tmp8385 := Call(__e, PrimFunc(symshen_4lambda_1function), tmp8384, W5799)
-
-
-tmp8386 := Call(__e, PrimFunc(symeval_1kl), tmp8385)
+tmp8392 := Call(__e, PrimFunc(symshen_4lambda_1function), tmp8391, W5803)
 
 
-__e.Return(PrimCons(V5798, tmp8386))
+tmp8393 := Call(__e, PrimFunc(symeval_1kl), tmp8392)
+
+
+__e.Return(PrimCons(V5802, tmp8393))
 return
 
 
@@ -1997,112 +1997,112 @@ return
 
 }, 1)
 
-tmp8392 := Call(__e, PrimFunc(symarity), V5798)
+tmp8399 := Call(__e, PrimFunc(symarity), V5802)
 
 
-__e.TailApply(tmp8383, tmp8392)
+__e.TailApply(tmp8390, tmp8399)
 return
 
 
 }, 1)
 
-tmp8393 := Call(__e, ns2_1set, symshen_4lambda_1entry, tmp8382)
+tmp8400 := Call(__e, ns2_1set, symshen_4lambda_1entry, tmp8389)
 
 
-_ = tmp8393
+_ = tmp8400
 
-tmp8394 := MakeNative(func(__e *ControlFlow) {
-V5800 := __e.Get(1)
-_ = V5800
-tmp8395 := MakeNative(func(__e *ControlFlow) {
-W5801 := __e.Get(1)
-_ = W5801
-tmp8396 := MakeNative(func(__e *ControlFlow) {
-Z5803 := __e.Get(1)
-_ = Z5803
-__e.TailApply(PrimFunc(symshen_4tuple), Z5803)
-return
-}, 1)
-
-tmp8397 := PrimCons(symshen_4tuple, tmp8396)
-
-tmp8398 := MakeNative(func(__e *ControlFlow) {
-Z5804 := __e.Get(1)
-_ = Z5804
-__e.TailApply(PrimFunc(symshen_4pvar), Z5804)
-return
-}, 1)
-
-tmp8399 := PrimCons(symshen_4pvar, tmp8398)
-
-tmp8400 := MakeNative(func(__e *ControlFlow) {
-Z5805 := __e.Get(1)
-_ = Z5805
-__e.TailApply(PrimFunc(symshen_4print_1prolog_1vector), Z5805)
-return
-}, 1)
-
-tmp8401 := PrimCons(symshen_4print_1prolog_1vector, tmp8400)
-
+tmp8401 := MakeNative(func(__e *ControlFlow) {
+V5804 := __e.Get(1)
+_ = V5804
 tmp8402 := MakeNative(func(__e *ControlFlow) {
-Z5806 := __e.Get(1)
-_ = Z5806
-__e.TailApply(PrimFunc(symshen_4print_1freshterm), Z5806)
-return
-}, 1)
-
-tmp8403 := PrimCons(symshen_4print_1freshterm, tmp8402)
-
-tmp8404 := MakeNative(func(__e *ControlFlow) {
+W5805 := __e.Get(1)
+_ = W5805
+tmp8403 := MakeNative(func(__e *ControlFlow) {
 Z5807 := __e.Get(1)
 _ = Z5807
-__e.TailApply(PrimFunc(symshen_4printF), Z5807)
+__e.TailApply(PrimFunc(symshen_4tuple), Z5807)
 return
 }, 1)
 
-tmp8405 := PrimCons(symshen_4printF, tmp8404)
+tmp8404 := PrimCons(symshen_4tuple, tmp8403)
 
-tmp8406 := PrimCons(tmp8405, W5801)
-
-tmp8407 := PrimCons(tmp8403, tmp8406)
-
-tmp8408 := PrimCons(tmp8401, tmp8407)
-
-tmp8409 := PrimCons(tmp8399, tmp8408)
-
-tmp8410 := PrimCons(tmp8397, tmp8409)
-
-__e.Return(PrimSet(symshen_4_dlambdatable_d, tmp8410))
+tmp8405 := MakeNative(func(__e *ControlFlow) {
+Z5808 := __e.Get(1)
+_ = Z5808
+__e.TailApply(PrimFunc(symshen_4pvar), Z5808)
 return
-
-
 }, 1)
+
+tmp8406 := PrimCons(symshen_4pvar, tmp8405)
+
+tmp8407 := MakeNative(func(__e *ControlFlow) {
+Z5809 := __e.Get(1)
+_ = Z5809
+__e.TailApply(PrimFunc(symshen_4print_1prolog_1vector), Z5809)
+return
+}, 1)
+
+tmp8408 := PrimCons(symshen_4print_1prolog_1vector, tmp8407)
+
+tmp8409 := MakeNative(func(__e *ControlFlow) {
+Z5810 := __e.Get(1)
+_ = Z5810
+__e.TailApply(PrimFunc(symshen_4print_1freshterm), Z5810)
+return
+}, 1)
+
+tmp8410 := PrimCons(symshen_4print_1freshterm, tmp8409)
 
 tmp8411 := MakeNative(func(__e *ControlFlow) {
-Z5802 := __e.Get(1)
-_ = Z5802
-__e.TailApply(PrimFunc(symshen_4lambda_1entry), Z5802)
+Z5811 := __e.Get(1)
+_ = Z5811
+__e.TailApply(PrimFunc(symshen_4printF), Z5811)
 return
 }, 1)
 
-tmp8412 := Call(__e, PrimFunc(symmap), tmp8411, V5800)
+tmp8412 := PrimCons(symshen_4printF, tmp8411)
 
+tmp8413 := PrimCons(tmp8412, W5805)
 
-__e.TailApply(tmp8395, tmp8412)
+tmp8414 := PrimCons(tmp8410, tmp8413)
+
+tmp8415 := PrimCons(tmp8408, tmp8414)
+
+tmp8416 := PrimCons(tmp8406, tmp8415)
+
+tmp8417 := PrimCons(tmp8404, tmp8416)
+
+__e.Return(PrimSet(symshen_4_dlambdatable_d, tmp8417))
 return
 
 
 }, 1)
 
-tmp8413 := Call(__e, ns2_1set, symshen_4build_1lambda_1table, tmp8394)
+tmp8418 := MakeNative(func(__e *ControlFlow) {
+Z5806 := __e.Get(1)
+_ = Z5806
+__e.TailApply(PrimFunc(symshen_4lambda_1entry), Z5806)
+return
+}, 1)
+
+tmp8419 := Call(__e, PrimFunc(symmap), tmp8418, V5804)
 
 
-_ = tmp8413
+__e.TailApply(tmp8402, tmp8419)
+return
 
-tmp8414 := Call(__e, PrimFunc(symexternal), symshen)
+
+}, 1)
+
+tmp8420 := Call(__e, ns2_1set, symshen_4build_1lambda_1table, tmp8401)
 
 
-__e.TailApply(PrimFunc(symshen_4build_1lambda_1table), tmp8414)
+_ = tmp8420
+
+tmp8421 := Call(__e, PrimFunc(symexternal), symshen)
+
+
+__e.TailApply(PrimFunc(symshen_4build_1lambda_1table), tmp8421)
 return
 
 

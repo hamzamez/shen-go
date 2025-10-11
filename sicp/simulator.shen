@@ -1,28 +1,14 @@
-(define stringify
-    []      -> "()"
-    [skip]  -> ")"
-    X       -> (str X) where (not (cons? X))
-    [skip X | Y] -> (@s  (stringify X) " " (stringify [skip | Y]) ) 
-    [X | Y] -> (@s "("  (stringify  X) " " (stringify [skip | Y]) ))
-
-(defmacro quote
-    [test X Y Z] -> [test X Y (stringify Z)])
-
-(define test
-    X Y Z -> [X Y Z])
-
 (define gcd-machine ->
     (make-machine
     gcd-machine
     [a b t]
     [[rem remainder][= =]]
-    (test-b (test (op =) (reg b) (const 0))
-             (branch (label gcd-done))
-             (assign t (op rem) (reg a) (reg b))
-             (assign a (reg b))
-             (assign b (reg t))
-             (goto (label test-b))
-             gcd-done)))
+    [test-b [test [op =] [reg b] [const 0]] 
+            [branch [label gcd-done]] 
+            [assign t [op rem] [reg a] [reg b]] 
+            [assign a [reg b]] [assign b [reg t]] 
+            [goto [label test-b]] 
+            gcd-done]))
 
 
     
@@ -85,7 +71,7 @@
     Machine -> (get register-table content (value Machine)))
 
 (define install-operations
-    Machine Ops -> (let PrevOps (operations Machine))
+    Machine Ops -> (let PrevOps (operations Machine)
                         (put the-ops content (append PrevOps Ops) (value Machine))))
                         
 
@@ -93,7 +79,7 @@
     Machine -> (get stack content (value Machine)))  
 
 (define push-stack
-    Machine Value -> (let Prev (stack Machine))
+    Machine Value -> (let Prev (stack Machine)
                           (put stack content [Value | Prev] (value Machine))))
 
 (define pop-stack
@@ -180,8 +166,8 @@
 (define make-assign
     [assign Target | Exp] Machine Labels Ops ->
         (/. Ignored (let Value-proc (make-assign-proc Exp Machine Labels Ops)
-                     (do (set-register-contents! Machine Target ))
-                          (advance-pc Machine))))
+                     (do (set-register-contents! Machine Target )
+                          (advance-pc Machine)))))
 
 
 (define make-assign-proc
